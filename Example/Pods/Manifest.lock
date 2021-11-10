@@ -1,0 +1,26 @@
+PODS:
+  - DirectPaymentSDK (0.0.1)
+  - PhonePePayment (0.0.4)
+
+DEPENDENCIES:
+  - "DirectPaymentSDK (from `git@github.com:PhonePe/DirectPaymentSDK.git`)"
+  - PhonePePayment (from `../`)
+
+EXTERNAL SOURCES:
+  DirectPaymentSDK:
+    :git: "git@github.com:PhonePe/DirectPaymentSDK.git"
+  PhonePePayment:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  DirectPaymentSDK:
+    :commit: cc2b74280094f4bf0765a84ffcefcdcdb0108666
+    :git: "git@github.com:PhonePe/DirectPaymentSDK.git"
+
+SPEC CHECKSUMS:
+  DirectPaymentSDK: 85db6826ea62832fd2987bcc1e2c5775430a1c6f
+  PhonePePayment: 3dabad219ee940d131716bf7e60a7ead2a91bc57
+
+PODFILE CHECKSUM: 96a0ea01ab1421bb1e3ac2539f222d05bdb32cd0
+
+COCOAPODS: 1.11.2

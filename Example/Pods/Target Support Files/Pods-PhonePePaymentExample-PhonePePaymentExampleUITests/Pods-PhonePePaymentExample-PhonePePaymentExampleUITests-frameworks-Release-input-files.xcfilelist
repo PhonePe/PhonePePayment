@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/DirectPaymentSDK/DirectPaymentSDK.framework/DirectPaymentSDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PhonePePayment/PhonePePayment.framework/PhonePePayment

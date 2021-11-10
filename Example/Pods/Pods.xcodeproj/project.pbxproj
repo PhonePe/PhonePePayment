@@ -1,0 +1,1059 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		CDD0E83C064976EA1EE379B1ACC84A44 /* DirectPaymentSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9AA919A230A387569FA35B014F9B04CB /* Build configuration list for PBXAggregateTarget "DirectPaymentSDK" */;
+			buildPhases = (
+				D0BFC71EAEFDDFB3BA49CC8CA7D5F871 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = DirectPaymentSDK;
+		};
+		F6A43AC75024799F4CE9B382496CA5C5 /* PhonePePayment */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 77BA1CE40C1C88600785CF69058F7788 /* Build configuration list for PBXAggregateTarget "PhonePePayment" */;
+			buildPhases = (
+				F24A50681C071CF79B6A9E2CF88934CA /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = PhonePePayment;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		09754AFBE048262889D94C006EE6DCBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0D1F161B33DE4C00C3C8909D435A513C /* Pods-PhonePePaymentExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C67E9FBDB9286B85C809DD4A9DD22AB /* Pods-PhonePePaymentExample-dummy.m */; };
+		6CE2FC4B53DEFAA39E9C7A6CB8EEF469 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7528EF2E41532A2B49E807F76FCB064C /* Pods-PhonePePaymentExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33414FCEAA0009097524CFD99A408154 /* Pods-PhonePePaymentExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		855802A8133A3221B6A636BE81C89B2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9AA9C092B73BB2533DC4E954511BD6B7 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44F2D13D50E87C6A2B3AA21D6502844D /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8E832557586D8CAD47946F4379EA849 /* Pods-PhonePePaymentExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BC99DA7903EC69B6BC3DD7DA07283F /* Pods-PhonePePaymentExampleTests-dummy.m */; };
+		BD109D3727AA956FCE6E8B7B6054D740 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEDECEE2BA309DEDE9BCAD8986B3288 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-dummy.m */; };
+		DC7C3A6B658CF421F5E77F4FEEF7EFB4 /* Pods-PhonePePaymentExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A25154323FD33A353DBDBB5287B61282 /* Pods-PhonePePaymentExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DDF84F8A18BFA48E4AB4D260CB68424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A43AC75024799F4CE9B382496CA5C5;
+			remoteInfo = PhonePePayment;
+		};
+		7702F0DCBF994A1D504C9BDF24B6EE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDD0E83C064976EA1EE379B1ACC84A44;
+			remoteInfo = DirectPaymentSDK;
+		};
+		9BF66EC68C34D3E80C35E3600F89EE35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDD0E83C064976EA1EE379B1ACC84A44;
+			remoteInfo = DirectPaymentSDK;
+		};
+		A1003A45DEE08D1B06B6FE498542564D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32610B960076B174A742DADF9335BC0C;
+			remoteInfo = "Pods-PhonePePaymentExample";
+		};
+		FAA788D5C45A929CE02B1DC89CFBD579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A43AC75024799F4CE9B382496CA5C5;
+			remoteInfo = PhonePePayment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BF3987F0F6810E15E8DB9D3835F971 /* Pods-PhonePePaymentExampleTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PhonePePaymentExampleTests"; path = Pods_PhonePePaymentExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		031C5C9189C04E4BB1019B217FE57413 /* Pods-PhonePePaymentExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhonePePaymentExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A7A6543D9D9DB32DC1EF01704C721C4 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1758D2DF2E129C49582D0876B36E75E9 /* DirectPaymentSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "DirectPaymentSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		17DA6709DAECFA9A9DAA81D410BD34F9 /* Pods-PhonePePaymentExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhonePePaymentExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		18F734AA5D6DE3F34B0F490769875E9C /* Pods-PhonePePaymentExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PhonePePaymentExampleTests.modulemap"; sourceTree = "<group>"; };
+		1C67E9FBDB9286B85C809DD4A9DD22AB /* Pods-PhonePePaymentExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhonePePaymentExample-dummy.m"; sourceTree = "<group>"; };
+		1FD40C077B4A2F6FDD061717DBA706C0 /* Pods-PhonePePaymentExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhonePePaymentExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24B0B852BB8EAADBF57AED61C3CBED23 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2A756BECC1E7CFCABB8E7931CBB16D33 /* Pods-PhonePePaymentExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PhonePePaymentExample"; path = Pods_PhonePePaymentExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FFC59C490C93246A1ACE56A1CC7220 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		33414FCEAA0009097524CFD99A408154 /* Pods-PhonePePaymentExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhonePePaymentExample-umbrella.h"; sourceTree = "<group>"; };
+		3D6DD97EC2171963A133EF4ED50B65B8 /* PhonePePayment-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "PhonePePayment-xcframeworks.sh"; sourceTree = "<group>"; };
+		44F2D13D50E87C6A2B3AA21D6502844D /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-umbrella.h"; sourceTree = "<group>"; };
+		463570298986F7C205C69103A038309E /* Pods-PhonePePaymentExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhonePePaymentExample.release.xcconfig"; sourceTree = "<group>"; };
+		4E221427125338B4979CADDF5E804250 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		55E2D8E02A86757AF89789B95B1044A2 /* Pods-PhonePePaymentExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhonePePaymentExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		65C230EF126AC7403153A46C03C2C9CB /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-Info.plist"; sourceTree = "<group>"; };
+		68AF791D063F16BA4362500A0C84D02E /* DirectPaymentSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = DirectPaymentSDK.xcframework; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		743224B821A5AA683B17843E3C65FFB8 /* Pods-PhonePePaymentExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhonePePaymentExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		797D97A7988F87E279973E3C25B5DC0C /* Pods-PhonePePaymentExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhonePePaymentExampleTests-Info.plist"; sourceTree = "<group>"; };
+		79887B10BA217A2D9E82959DA988FEF3 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests"; path = Pods_PhonePePaymentExample_PhonePePaymentExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7151B612C9F046122FC61798192058 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9110A3A3B910B33EA7E1B97918A00AEE /* Pods-PhonePePaymentExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhonePePaymentExample-frameworks.sh"; sourceTree = "<group>"; };
+		93DF3C0A27F0A0035D2CB66144DF318A /* PhonePePayment.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = PhonePePayment.xcframework; sourceTree = "<group>"; };
+		982B5E438F880923A84B93DFBD5AEAF0 /* Pods-PhonePePaymentExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhonePePaymentExample-Info.plist"; sourceTree = "<group>"; };
+		9841D1CDF8621F3807F9078B364F3A87 /* PhonePePayment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhonePePayment.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A25154323FD33A353DBDBB5287B61282 /* Pods-PhonePePaymentExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhonePePaymentExampleTests-umbrella.h"; sourceTree = "<group>"; };
+		A81D369A2C6F9DC985B61C8815657A27 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B263D6E203268A0CA2395BE46B71EFBB /* PhonePePayment.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PhonePePayment.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B2BC99DA7903EC69B6BC3DD7DA07283F /* Pods-PhonePePaymentExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhonePePaymentExampleTests-dummy.m"; sourceTree = "<group>"; };
+		B76C088695C527621E2EDD9FD1E2BADB /* PhonePePayment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhonePePayment.release.xcconfig; sourceTree = "<group>"; };
+		C58E3D59C8DCE7148E10786242EB294C /* DirectPaymentSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DirectPaymentSDK.debug.xcconfig; sourceTree = "<group>"; };
+		CAEDECEE2BA309DEDE9BCAD8986B3288 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-dummy.m"; sourceTree = "<group>"; };
+		CEE26AC7706690149219ECEFE350C5E5 /* DirectPaymentSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DirectPaymentSDK.release.xcconfig; sourceTree = "<group>"; };
+		CF7665762E5DF4A0BFECC07D78432347 /* Pods-PhonePePaymentExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhonePePaymentExample.debug.xcconfig"; sourceTree = "<group>"; };
+		D55D657CC6470727B315935A447010BD /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7B625E1E38CC6170B4D840210B9D5FD /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.modulemap"; sourceTree = "<group>"; };
+		E211939A08BF3969ED01A08DCECC27CD /* Pods-PhonePePaymentExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PhonePePaymentExample.modulemap"; sourceTree = "<group>"; };
+		F76FD7B9536CE95932FFB8F152094C8B /* Pods-PhonePePaymentExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhonePePaymentExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89EB9EF9883C9937F717515028094F33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE2FC4B53DEFAA39E9C7A6CB8EEF469 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF9E40DCCFDC366C64B5E684D71852D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855802A8133A3221B6A636BE81C89B2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D3B44D00454462A68E19CE29D886F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09754AFBE048262889D94C006EE6DCBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13AF55508B76404865101538A3CF6298 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D6DD97EC2171963A133EF4ED50B65B8 /* PhonePePayment-xcframeworks.sh */,
+				9841D1CDF8621F3807F9078B364F3A87 /* PhonePePayment.debug.xcconfig */,
+				B76C088695C527621E2EDD9FD1E2BADB /* PhonePePayment.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PhonePePayment";
+			sourceTree = "<group>";
+		};
+		1533B7D4F8F2591ECC23574C79DF9FBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A756BECC1E7CFCABB8E7931CBB16D33 /* Pods-PhonePePaymentExample */,
+				79887B10BA217A2D9E82959DA988FEF3 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests */,
+				01BF3987F0F6810E15E8DB9D3835F971 /* Pods-PhonePePaymentExampleTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23C2852AD0BBFBAA00A805326028C387 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1758D2DF2E129C49582D0876B36E75E9 /* DirectPaymentSDK-xcframeworks.sh */,
+				C58E3D59C8DCE7148E10786242EB294C /* DirectPaymentSDK.debug.xcconfig */,
+				CEE26AC7706690149219ECEFE350C5E5 /* DirectPaymentSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DirectPaymentSDK";
+			sourceTree = "<group>";
+		};
+		2CECF814F4D51A83965F7515F626CEE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68AF791D063F16BA4362500A0C84D02E /* DirectPaymentSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BC3FD7662E65E02E8169C7BE40A3F7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EADE50E331FE22AD471937FF1BF4AC82 /* DirectPaymentSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5997AABCE3049433345BE65E844A163E /* PhonePePayment */ = {
+			isa = PBXGroup;
+			children = (
+				8A67477888DC16468A592B50EC37D892 /* Frameworks */,
+				E69FCE1E735C6CD7F0BD4CD2D03FA3F2 /* Pod */,
+				13AF55508B76404865101538A3CF6298 /* Support Files */,
+			);
+			name = PhonePePayment;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		75D0E37218056517C4373232EEC5A494 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5997AABCE3049433345BE65E844A163E /* PhonePePayment */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8A67477888DC16468A592B50EC37D892 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93DF3C0A27F0A0035D2CB66144DF318A /* PhonePePayment.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A6005DF56869A3F4EDF6EB4E215AC69 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7B625E1E38CC6170B4D840210B9D5FD /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.modulemap */,
+				A81D369A2C6F9DC985B61C8815657A27 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-acknowledgements.markdown */,
+				32FFC59C490C93246A1ACE56A1CC7220 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-acknowledgements.plist */,
+				CAEDECEE2BA309DEDE9BCAD8986B3288 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-dummy.m */,
+				0A7A6543D9D9DB32DC1EF01704C721C4 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-frameworks.sh */,
+				65C230EF126AC7403153A46C03C2C9CB /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-Info.plist */,
+				44F2D13D50E87C6A2B3AA21D6502844D /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-umbrella.h */,
+				D55D657CC6470727B315935A447010BD /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.debug.xcconfig */,
+				8E7151B612C9F046122FC61798192058 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.release.xcconfig */,
+			);
+			name = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests";
+			path = "Target Support Files/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests";
+			sourceTree = "<group>";
+		};
+		9E26BC1CD6A75E8C2D64341FEE5D7ED5 /* Pods-PhonePePaymentExample */ = {
+			isa = PBXGroup;
+			children = (
+				E211939A08BF3969ED01A08DCECC27CD /* Pods-PhonePePaymentExample.modulemap */,
+				031C5C9189C04E4BB1019B217FE57413 /* Pods-PhonePePaymentExample-acknowledgements.markdown */,
+				55E2D8E02A86757AF89789B95B1044A2 /* Pods-PhonePePaymentExample-acknowledgements.plist */,
+				1C67E9FBDB9286B85C809DD4A9DD22AB /* Pods-PhonePePaymentExample-dummy.m */,
+				9110A3A3B910B33EA7E1B97918A00AEE /* Pods-PhonePePaymentExample-frameworks.sh */,
+				982B5E438F880923A84B93DFBD5AEAF0 /* Pods-PhonePePaymentExample-Info.plist */,
+				33414FCEAA0009097524CFD99A408154 /* Pods-PhonePePaymentExample-umbrella.h */,
+				CF7665762E5DF4A0BFECC07D78432347 /* Pods-PhonePePaymentExample.debug.xcconfig */,
+				463570298986F7C205C69103A038309E /* Pods-PhonePePaymentExample.release.xcconfig */,
+			);
+			name = "Pods-PhonePePaymentExample";
+			path = "Target Support Files/Pods-PhonePePaymentExample";
+			sourceTree = "<group>";
+		};
+		C3051583350B9D93EE1D80299C37EE59 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E26BC1CD6A75E8C2D64341FEE5D7ED5 /* Pods-PhonePePaymentExample */,
+				9A6005DF56869A3F4EDF6EB4E215AC69 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests */,
+				D3F431B7E01F0DC211F13FE4E9A2328A /* Pods-PhonePePaymentExampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				75D0E37218056517C4373232EEC5A494 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4BC3FD7662E65E02E8169C7BE40A3F7D /* Pods */,
+				1533B7D4F8F2591ECC23574C79DF9FBE /* Products */,
+				C3051583350B9D93EE1D80299C37EE59 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3F431B7E01F0DC211F13FE4E9A2328A /* Pods-PhonePePaymentExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				18F734AA5D6DE3F34B0F490769875E9C /* Pods-PhonePePaymentExampleTests.modulemap */,
+				1FD40C077B4A2F6FDD061717DBA706C0 /* Pods-PhonePePaymentExampleTests-acknowledgements.markdown */,
+				743224B821A5AA683B17843E3C65FFB8 /* Pods-PhonePePaymentExampleTests-acknowledgements.plist */,
+				B2BC99DA7903EC69B6BC3DD7DA07283F /* Pods-PhonePePaymentExampleTests-dummy.m */,
+				797D97A7988F87E279973E3C25B5DC0C /* Pods-PhonePePaymentExampleTests-Info.plist */,
+				A25154323FD33A353DBDBB5287B61282 /* Pods-PhonePePaymentExampleTests-umbrella.h */,
+				17DA6709DAECFA9A9DAA81D410BD34F9 /* Pods-PhonePePaymentExampleTests.debug.xcconfig */,
+				F76FD7B9536CE95932FFB8F152094C8B /* Pods-PhonePePaymentExampleTests.release.xcconfig */,
+			);
+			name = "Pods-PhonePePaymentExampleTests";
+			path = "Target Support Files/Pods-PhonePePaymentExampleTests";
+			sourceTree = "<group>";
+		};
+		E69FCE1E735C6CD7F0BD4CD2D03FA3F2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4E221427125338B4979CADDF5E804250 /* LICENSE */,
+				B263D6E203268A0CA2395BE46B71EFBB /* PhonePePayment.podspec */,
+				24B0B852BB8EAADBF57AED61C3CBED23 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EADE50E331FE22AD471937FF1BF4AC82 /* DirectPaymentSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2CECF814F4D51A83965F7515F626CEE6 /* Frameworks */,
+				23C2852AD0BBFBAA00A805326028C387 /* Support Files */,
+			);
+			name = DirectPaymentSDK;
+			path = DirectPaymentSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6BEF8F2B5FB664C1F08F107FEF6E44B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA9C092B73BB2533DC4E954511BD6B7 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F06DE0457E3A6699DF666FC1AF94C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7528EF2E41532A2B49E807F76FCB064C /* Pods-PhonePePaymentExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA921E1E0ED42BCECC1617580776ADE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7C3A6B658CF421F5E77F4FEEF7EFB4 /* Pods-PhonePePaymentExampleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C4225BA6FC497E599E4E1BD9E37394C /* Pods-PhonePePaymentExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2309C84AC8D3517A52696BB629C6F9EB /* Build configuration list for PBXNativeTarget "Pods-PhonePePaymentExampleTests" */;
+			buildPhases = (
+				BEA921E1E0ED42BCECC1617580776ADE /* Headers */,
+				7A59D6D57071189A924F95215EC332C4 /* Sources */,
+				89EB9EF9883C9937F717515028094F33 /* Frameworks */,
+				597BCB184966091371F6F0C84D2F21B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D5D0C95859BD18FBC860BD21D72187A /* PBXTargetDependency */,
+			);
+			name = "Pods-PhonePePaymentExampleTests";
+			productName = Pods_PhonePePaymentExampleTests;
+			productReference = 01BF3987F0F6810E15E8DB9D3835F971 /* Pods-PhonePePaymentExampleTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		2FA10004C46B1DF151C86A1CFBE9BD3D /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA87CADBFAD0EBF987792CDA1EC2E63 /* Build configuration list for PBXNativeTarget "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests" */;
+			buildPhases = (
+				6BEF8F2B5FB664C1F08F107FEF6E44B2 /* Headers */,
+				877B2339E97C2D42CFDDF1C46CF2EE0A /* Sources */,
+				8FF9E40DCCFDC366C64B5E684D71852D /* Frameworks */,
+				32EBF0969FF400159870180909D47469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59D9B6CB35C3F6B6EE455A354E97EBCA /* PBXTargetDependency */,
+				C7534A758824C8BEB246F96E2FEF289C /* PBXTargetDependency */,
+			);
+			name = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests";
+			productName = Pods_PhonePePaymentExample_PhonePePaymentExampleUITests;
+			productReference = 79887B10BA217A2D9E82959DA988FEF3 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		32610B960076B174A742DADF9335BC0C /* Pods-PhonePePaymentExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97CE5033264A7C6D2E9A334C09DD31E4 /* Build configuration list for PBXNativeTarget "Pods-PhonePePaymentExample" */;
+			buildPhases = (
+				99F06DE0457E3A6699DF666FC1AF94C4 /* Headers */,
+				A2D688FBF41719DB000BB17E0A547CE4 /* Sources */,
+				9D3B44D00454462A68E19CE29D886F26 /* Frameworks */,
+				1D0510682E69DEBF5C60B68184CA7B2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9DFD558EC09714E5E590801E7B67FC7 /* PBXTargetDependency */,
+				B3FCED1D356FE3CD408551413B55CA5C /* PBXTargetDependency */,
+			);
+			name = "Pods-PhonePePaymentExample";
+			productName = Pods_PhonePePaymentExample;
+			productReference = 2A756BECC1E7CFCABB8E7931CBB16D33 /* Pods-PhonePePaymentExample */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1533B7D4F8F2591ECC23574C79DF9FBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDD0E83C064976EA1EE379B1ACC84A44 /* DirectPaymentSDK */,
+				F6A43AC75024799F4CE9B382496CA5C5 /* PhonePePayment */,
+				32610B960076B174A742DADF9335BC0C /* Pods-PhonePePaymentExample */,
+				2FA10004C46B1DF151C86A1CFBE9BD3D /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests */,
+				2C4225BA6FC497E599E4E1BD9E37394C /* Pods-PhonePePaymentExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D0510682E69DEBF5C60B68184CA7B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32EBF0969FF400159870180909D47469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		597BCB184966091371F6F0C84D2F21B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0BFC71EAEFDDFB3BA49CC8CA7D5F871 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/DirectPaymentSDK/DirectPaymentSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/DirectPaymentSDK/DirectPaymentSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/DirectPaymentSDK/DirectPaymentSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24A50681C071CF79B6A9E2CF88934CA /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/PhonePePayment/PhonePePayment-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/PhonePePayment/PhonePePayment-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/PhonePePayment/PhonePePayment-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A59D6D57071189A924F95215EC332C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E832557586D8CAD47946F4379EA849 /* Pods-PhonePePaymentExampleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		877B2339E97C2D42CFDDF1C46CF2EE0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD109D3727AA956FCE6E8B7B6054D740 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D688FBF41719DB000BB17E0A547CE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D1F161B33DE4C00C3C8909D435A513C /* Pods-PhonePePaymentExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D5D0C95859BD18FBC860BD21D72187A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PhonePePaymentExample";
+			target = 32610B960076B174A742DADF9335BC0C /* Pods-PhonePePaymentExample */;
+			targetProxy = A1003A45DEE08D1B06B6FE498542564D /* PBXContainerItemProxy */;
+		};
+		59D9B6CB35C3F6B6EE455A354E97EBCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DirectPaymentSDK;
+			target = CDD0E83C064976EA1EE379B1ACC84A44 /* DirectPaymentSDK */;
+			targetProxy = 9BF66EC68C34D3E80C35E3600F89EE35 /* PBXContainerItemProxy */;
+		};
+		B3FCED1D356FE3CD408551413B55CA5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PhonePePayment;
+			target = F6A43AC75024799F4CE9B382496CA5C5 /* PhonePePayment */;
+			targetProxy = 5DDF84F8A18BFA48E4AB4D260CB68424 /* PBXContainerItemProxy */;
+		};
+		C7534A758824C8BEB246F96E2FEF289C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PhonePePayment;
+			target = F6A43AC75024799F4CE9B382496CA5C5 /* PhonePePayment */;
+			targetProxy = FAA788D5C45A929CE02B1DC89CFBD579 /* PBXContainerItemProxy */;
+		};
+		F9DFD558EC09714E5E590801E7B67FC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DirectPaymentSDK;
+			target = CDD0E83C064976EA1EE379B1ACC84A44 /* DirectPaymentSDK */;
+			targetProxy = 7702F0DCBF994A1D504C9BDF24B6EE34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02704E2A902B71424E01DBC83FF26427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D55D657CC6470727B315935A447010BD /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05D8EDAFB1D309378E95A89A22A3AAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9841D1CDF8621F3807F9078B364F3A87 /* PhonePePayment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		185C06AF11BEAE1A19872318391218F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7151B612C9F046122FC61798192058 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18ED44BFAC697ECD98ADAB35AA5112A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 463570298986F7C205C69103A038309E /* Pods-PhonePePaymentExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhonePePaymentExample/Pods-PhonePePaymentExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhonePePaymentExample/Pods-PhonePePaymentExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4FBB1FD88C7C0DC99A08F38B727598B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F76FD7B9536CE95932FFB8F152094C8B /* Pods-PhonePePaymentExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhonePePaymentExampleTests/Pods-PhonePePaymentExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhonePePaymentExampleTests/Pods-PhonePePaymentExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59B00A01FB66F4813BEB2C662968DAC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B76C088695C527621E2EDD9FD1E2BADB /* PhonePePayment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AEFD05A60321CECC25A1ED5A537D4DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE26AC7706690149219ECEFE350C5E5 /* DirectPaymentSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C98CB045343256737173470C2CE011C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF7665762E5DF4A0BFECC07D78432347 /* Pods-PhonePePaymentExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhonePePaymentExample/Pods-PhonePePaymentExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhonePePaymentExample/Pods-PhonePePaymentExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA85248690AE0B9C137CF707C8A64665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17DA6709DAECFA9A9DAA81D410BD34F9 /* Pods-PhonePePaymentExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhonePePaymentExampleTests/Pods-PhonePePaymentExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhonePePaymentExampleTests/Pods-PhonePePaymentExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDC427F0E7AA501F7F16F6356E94D6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C58E3D59C8DCE7148E10786242EB294C /* DirectPaymentSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2309C84AC8D3517A52696BB629C6F9EB /* Build configuration list for PBXNativeTarget "Pods-PhonePePaymentExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA85248690AE0B9C137CF707C8A64665 /* Debug */,
+				4FBB1FD88C7C0DC99A08F38B727598B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77BA1CE40C1C88600785CF69058F7788 /* Build configuration list for PBXAggregateTarget "PhonePePayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D8EDAFB1D309378E95A89A22A3AAAD /* Debug */,
+				59B00A01FB66F4813BEB2C662968DAC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97CE5033264A7C6D2E9A334C09DD31E4 /* Build configuration list for PBXNativeTarget "Pods-PhonePePaymentExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98CB045343256737173470C2CE011C5 /* Debug */,
+				18ED44BFAC697ECD98ADAB35AA5112A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AA919A230A387569FA35B014F9B04CB /* Build configuration list for PBXAggregateTarget "DirectPaymentSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC427F0E7AA501F7F16F6356E94D6BA /* Debug */,
+				AEFD05A60321CECC25A1ED5A537D4DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA87CADBFAD0EBF987792CDA1EC2E63 /* Build configuration list for PBXNativeTarget "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02704E2A902B71424E01DBC83FF26427 /* Debug */,
+				185C06AF11BEAE1A19872318391218F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "DirectPaymentSDK",
+  "version": "0.0.1",
+  "summary": "DirectPaymentSDK",
+  "description": "Phonepe Payment SDK",
+  "homepage": "https://github.com/PhonePe/DirectPaymentSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Vishal Jhanjhri": "vishal.jhanjhri@phonepe.com"
+  },
+  "source": {
+    "git": "https://github.com/PhonePe/DirectPaymentSDK.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "vendored_frameworks": "DirectPaymentSDK.xcframework"
+}

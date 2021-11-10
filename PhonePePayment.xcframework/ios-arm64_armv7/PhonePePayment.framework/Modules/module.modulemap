@@ -1,0 +1,11 @@
+framework module PhonePePayment {
+  umbrella header "PhonePePayment.h"
+
+  export *
+  module * { export * }
+}
+
+module PhonePePayment.Swift {
+    header "PhonePePayment-Swift.h"
+    requires objc
+}
