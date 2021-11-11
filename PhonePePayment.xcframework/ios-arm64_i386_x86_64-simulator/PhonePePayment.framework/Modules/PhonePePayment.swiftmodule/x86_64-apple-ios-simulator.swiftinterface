@@ -48,6 +48,7 @@ public typealias DPSTransactionCompletion = (PhonePePayment.DPSTransactionReques
     get
     set
   }
+  public static var version: Swift.String?
   public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil)
   @objc convenience override dynamic public init()
   public static func getPackageSignature() -> Swift.String
