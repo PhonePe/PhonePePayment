@@ -77,7 +77,7 @@ To execute the Example app:
 
 __Step 1__: Clone Repo
 ```shell
-$ git clone https://github.com/PhonePe/DirectPaymentSDK
+$ git clone https://github.com/PhonePe/PhonePePayment
 ```
 
 __Step 2__: Run Pod Install
