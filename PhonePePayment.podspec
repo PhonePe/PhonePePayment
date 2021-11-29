@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/PhonePe/PhonePePayment'
   s.license          = { :type => 'Proprietary', :text => 'Copyright 2021 PhonePe. All rights reserved.' }
-  s.author           = { 'Vishal Jhanjhri' => 'vishal.jhanjhri@phonepe.com' }
+  s.author           = { 'PhonePe' => 'ios-support@phonepe.com' }
   s.source           = { :git => 'https://github.com/PhonePe/PhonePePayment.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'

@@ -1,0 +1,16 @@
+PODS:
+  - PhonePePayment (2.0.0)
+
+DEPENDENCIES:
+  - PhonePePayment (from `../../`)
+
+EXTERNAL SOURCES:
+  PhonePePayment:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  PhonePePayment: 3845fcef59370fc9cb119cd15182999a428fa6ee
+
+PODFILE CHECKSUM: f9d3c5ba8451f60c45e9736f8b76c010b672b570
+
+COCOAPODS: 1.11.2

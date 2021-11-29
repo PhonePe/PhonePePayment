@@ -1,6 +1,0 @@
-framework module Pods_PhonePePaymentExampleTests {
-  umbrella header "Pods-PhonePePaymentExampleTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
