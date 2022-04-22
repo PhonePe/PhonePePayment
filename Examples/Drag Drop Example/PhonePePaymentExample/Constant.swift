@@ -7,7 +7,7 @@
 
 import Foundation
 
-let saltIndex: Int = 0 //YOUR SALT INDEX
+let saltIndex: Int = 0 // YOUR SALT INDEX
 let salt: String = "YOUR SALT KEY GOES HERE"
 let merchantId: String = "YOUR MERCHANT ID HERE GOES HERE"
-let deeplinkSchema: String = "PhonePeExampleScheme" //YOUR CUSTOM DEEPLINK SCHEMA
+let deeplinkSchema: String = "PhonePeExampleScheme" // YOUR CUSTOM DEEPLINK SCHEMA
