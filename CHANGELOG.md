@@ -1,4 +1,4 @@
-## [2.1.1]
+## [2.1.2]
 - Open Intent now supported.
 - IntentCompletion Fix.
 - Bug fixes and performance.
