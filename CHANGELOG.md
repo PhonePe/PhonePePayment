@@ -1,7 +1,7 @@
-## [2.1.2]
-- Open Intent now supported.
+## [2.1.3]
+- Now Support Open Intent.
 - IntentCompletion Fix.
-- Bug fixes and performance.
+- Bug fixes and performance improvement.
 
 
 ## [2.0.0]
