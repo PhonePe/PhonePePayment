@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8F163D7F0C798AE4786995E1 /* Pods_PhonePePaymentExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2501394D56D84F2BBF89F3F /* Pods_PhonePePaymentExample.framework */; };
-		A1A80A35273AFFC400A374A9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A80A34273AFFC400A374A9 /* Constant.swift */; };
-		A1D9F468273A812A00563177 /* ChecksumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D9F467273A812A00563177 /* ChecksumHelper.swift */; };
-		A1E4904A2732751B009A2190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E490492732751B009A2190 /* AppDelegate.swift */; };
-		A1E4904E2732751C009A2190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E4904D2732751B009A2190 /* ViewController.swift */; };
-		A1E490512732751C009A2190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E4904F2732751C009A2190 /* Main.storyboard */; };
-		A1E490532732751D009A2190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E490522732751D009A2190 /* Assets.xcassets */; };
-		A1E490562732751D009A2190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E490542732751D009A2190 /* LaunchScreen.storyboard */; };
+		A1687233281822AB00B4BEDE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A168722A281822AB00B4BEDE /* Constant.swift */; };
+		A1687234281822AB00B4BEDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A168722B281822AB00B4BEDE /* ViewController.swift */; };
+		A1687235281822AB00B4BEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A168722C281822AB00B4BEDE /* Assets.xcassets */; };
+		A1687236281822AB00B4BEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A168722D281822AB00B4BEDE /* LaunchScreen.storyboard */; };
+		A1687237281822AB00B4BEDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A168722F281822AB00B4BEDE /* Main.storyboard */; };
+		A1687238281822AB00B4BEDE /* ChecksumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1687231281822AB00B4BEDE /* ChecksumHelper.swift */; };
+		A1687239281822AB00B4BEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1687232281822AB00B4BEDE /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,14 +23,14 @@
 		33F57E3D6DE279A46290D274 /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		384A8F0980A52CF6BCF9DC69 /* Pods_PhonePePaymentExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhonePePaymentExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		730EA8829D77B3991D3BE5DC /* Pods-PhonePePaymentExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonePePaymentExample.release.xcconfig"; path = "Target Support Files/Pods-PhonePePaymentExample/Pods-PhonePePaymentExample.release.xcconfig"; sourceTree = "<group>"; };
-		A1A80A34273AFFC400A374A9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		A1D9F467273A812A00563177 /* ChecksumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecksumHelper.swift; sourceTree = "<group>"; };
+		A168722A281822AB00B4BEDE /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A168722B281822AB00B4BEDE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A168722C281822AB00B4BEDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A168722E281822AB00B4BEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1687230281822AB00B4BEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1687231281822AB00B4BEDE /* ChecksumHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecksumHelper.swift; sourceTree = "<group>"; };
+		A1687232281822AB00B4BEDE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E490462732751B009A2190 /* PhonePePaymentExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonePePaymentExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1E490492732751B009A2190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1E4904D2732751B009A2190 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A1E490502732751C009A2190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A1E490522732751D009A2190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A1E490552732751D009A2190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1E490572732751D009A2190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEAA23ADD20088BFF7C93CEB /* Pods-PhonePePaymentExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonePePaymentExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-PhonePePaymentExampleTests/Pods-PhonePePaymentExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA320477A24975B0264D604E /* Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests/Pods-PhonePePaymentExample-PhonePePaymentExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +63,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A1687229281822AB00B4BEDE /* CommonCode */ = {
+			isa = PBXGroup;
+			children = (
+				A168722A281822AB00B4BEDE /* Constant.swift */,
+				A168722B281822AB00B4BEDE /* ViewController.swift */,
+				A168722C281822AB00B4BEDE /* Assets.xcassets */,
+				A168722D281822AB00B4BEDE /* LaunchScreen.storyboard */,
+				A168722F281822AB00B4BEDE /* Main.storyboard */,
+				A1687231281822AB00B4BEDE /* ChecksumHelper.swift */,
+				A1687232281822AB00B4BEDE /* AppDelegate.swift */,
+			);
+			name = CommonCode;
+			path = ../../CommonCode;
+			sourceTree = "<group>";
+		};
 		A1E4903D2732751B009A2190 = {
 			isa = PBXGroup;
 			children = (
@@ -84,14 +99,8 @@
 		A1E490482732751B009A2190 /* PhonePePaymentExample */ = {
 			isa = PBXGroup;
 			children = (
-				A1E490492732751B009A2190 /* AppDelegate.swift */,
-				A1E4904D2732751B009A2190 /* ViewController.swift */,
-				A1E4904F2732751C009A2190 /* Main.storyboard */,
-				A1E490522732751D009A2190 /* Assets.xcassets */,
-				A1E490542732751D009A2190 /* LaunchScreen.storyboard */,
+				A1687229281822AB00B4BEDE /* CommonCode */,
 				A1E490572732751D009A2190 /* Info.plist */,
-				A1D9F467273A812A00563177 /* ChecksumHelper.swift */,
-				A1A80A34273AFFC400A374A9 /* Constant.swift */,
 			);
 			path = PhonePePaymentExample;
 			sourceTree = "<group>";
@@ -165,9 +174,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E490562732751D009A2190 /* LaunchScreen.storyboard in Resources */,
-				A1E490532732751D009A2190 /* Assets.xcassets in Resources */,
-				A1E490512732751C009A2190 /* Main.storyboard in Resources */,
+				A1687237281822AB00B4BEDE /* Main.storyboard in Resources */,
+				A1687235281822AB00B4BEDE /* Assets.xcassets in Resources */,
+				A1687236281822AB00B4BEDE /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,30 +229,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E4904E2732751C009A2190 /* ViewController.swift in Sources */,
-				A1D9F468273A812A00563177 /* ChecksumHelper.swift in Sources */,
-				A1E4904A2732751B009A2190 /* AppDelegate.swift in Sources */,
-				A1A80A35273AFFC400A374A9 /* Constant.swift in Sources */,
+				A1687239281822AB00B4BEDE /* AppDelegate.swift in Sources */,
+				A1687234281822AB00B4BEDE /* ViewController.swift in Sources */,
+				A1687238281822AB00B4BEDE /* ChecksumHelper.swift in Sources */,
+				A1687233281822AB00B4BEDE /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A1E4904F2732751C009A2190 /* Main.storyboard */ = {
+		A168722D281822AB00B4BEDE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1E490502732751C009A2190 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A1E490542732751D009A2190 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1E490552732751D009A2190 /* Base */,
+				A168722E281822AB00B4BEDE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A168722F281822AB00B4BEDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1687230281822AB00B4BEDE /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

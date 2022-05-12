@@ -6,6 +6,7 @@ import Foundation
 @_exported import PhonePePayment
 import Swift
 import UIKit
+import WebKit
 @objc public enum Environment : Swift.Int {
   case stage
   case uat
@@ -19,58 +20,43 @@ import UIKit
     get
   }
 }
+public typealias PhonePETransactionRequest = PhonePePayment.DPSTransactionRequest
 @objc public class DPSTransactionRequest : ObjectiveC.NSObject {
   public init(body: Swift.String, apiEndPoint: Swift.String, checksum: Swift.String, headers: [Swift.String : Swift.String]?, callBackURL: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
-public protocol PhonePeErrorProtocol : Swift.Error {
+public protocol Equal {
+  var identifier: Swift.String { get }
+  func isEqualTo(_ to: PhonePePayment.Equal) -> Swift.Bool
+}
+public protocol PhonePeErrorProtocol : PhonePePayment.Equal, Swift.Error {
   var code: Swift.String { get }
   var localizedDescription: Swift.String { get }
-}
-public enum TransactionInterruptedError : PhonePePayment.PhonePeErrorProtocol {
-  case appReOpenedWithoutTransactionDetail
-  public var code: Swift.String {
-    get
-  }
-  public var localizedDescription: Swift.String {
-    get
-  }
-  public static func == (a: PhonePePayment.TransactionInterruptedError, b: PhonePePayment.TransactionInterruptedError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum TransactionFailureError : PhonePePayment.PhonePeErrorProtocol {
-  case requestFailure(message: Swift.String)
-  case networkFailure(message: Swift.String)
-  case serverError(message: Swift.String)
-  case failedRedirection
-  case transactionFailure
-  case webFlowFailure(message: Swift.String)
-  public var code: Swift.String {
-    get
-  }
-  public var localizedDescription: Swift.String {
-    get
-  }
 }
 public enum PPResultState {
   case success
   case failure(_: PhonePePayment.PhonePeErrorProtocol)
   case interrupted(_: PhonePePayment.PhonePeErrorProtocol)
 }
-@_hasMissingDesignatedInitializers @objc final public class AnalyticsManager : ObjectiveC.NSObject {
-  public static var shared: PhonePePayment.AnalyticsManager? {
+extension PPResultState : Swift.Equatable {
+  public static func == (lhs: PhonePePayment.PPResultState, rhs: PhonePePayment.PPResultState) -> Swift.Bool
+}
+public enum PPTransactionStatus : Swift.String {
+  case SUCCESS
+  case FAILED
+  case PENDING
+  case CANCELLED
+  case UNKNOWN
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
-  public static func setup()
-  final public func configureViaTransactionRequest(_ request: PhonePePayment.DPSTransactionRequest)
-  @objc override dynamic public init()
-  @objc deinit
 }
 public typealias DPSTransactionCompletion = (PhonePePayment.DPSTransactionRequest, PhonePePayment.PPResultState) -> Swift.Void
+public typealias PGTransactionCompletion = (PhonePePayment.DPSTransactionRequest, PhonePePayment.PPResultState) -> Swift.Void
+public typealias PhonePE = PhonePePayment.PhonePeDPSDK
 @_inheritsConvenienceInitializers @objc public class PhonePeDPSDK : ObjectiveC.NSObject {
   public static var enableDebugLogs: Swift.Bool {
     get
@@ -84,11 +70,13 @@ public typealias DPSTransactionCompletion = (PhonePePayment.DPSTransactionReques
   public static func isPaytmAppPresent() -> Swift.Bool
   public static func isGPayAppPresent() -> Swift.Bool
   public static func checkDeeplink(_ url: Foundation.URL) -> Swift.Bool
-  public func startPhonePeTransactionRequest(transactionRequest request: PhonePePayment.DPSTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.DPSTransactionCompletion)
+  public func startPhonePeTransactionRequest(transactionRequest request: PhonePePayment.PhonePETransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.DPSTransactionCompletion)
+  public func startPG(transactionRequest request: PhonePePayment.PhonePETransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PGTransactionCompletion)
   @objc deinit
 }
 extension PhonePePayment.Environment : Swift.Equatable {}
 extension PhonePePayment.Environment : Swift.Hashable {}
 extension PhonePePayment.Environment : Swift.RawRepresentable {}
-extension PhonePePayment.TransactionInterruptedError : Swift.Equatable {}
-extension PhonePePayment.TransactionInterruptedError : Swift.Hashable {}
+extension PhonePePayment.PPTransactionStatus : Swift.Equatable {}
+extension PhonePePayment.PPTransactionStatus : Swift.Hashable {}
+extension PhonePePayment.PPTransactionStatus : Swift.RawRepresentable {}
