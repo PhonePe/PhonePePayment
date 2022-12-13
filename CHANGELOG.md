@@ -1,5 +1,5 @@
-## [2.3.0]
-- Now use B2B flow 
+## [2.3.1]
+- Added support for B2B flow
 - Improved security
 - Improved performance
 
