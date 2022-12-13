@@ -209,13 +209,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-SWIFT_CLASS("_TtC14PhonePePayment16AnalyticsManager")
-@interface AnalyticsManager : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 
 SWIFT_CLASS("_TtC14PhonePePayment21DPSTransactionRequest")
 @interface DPSTransactionRequest : NSObject
@@ -235,6 +228,8 @@ SWIFT_CLASS("_TtC14PhonePePayment12PhonePeDPSDK")
 @interface PhonePeDPSDK : NSObject
 - (nonnull instancetype)init;
 @end
+
+
 
 
 
@@ -454,13 +449,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-SWIFT_CLASS("_TtC14PhonePePayment16AnalyticsManager")
-@interface AnalyticsManager : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 
 SWIFT_CLASS("_TtC14PhonePePayment21DPSTransactionRequest")
 @interface DPSTransactionRequest : NSObject
@@ -480,6 +468,8 @@ SWIFT_CLASS("_TtC14PhonePePayment12PhonePeDPSDK")
 @interface PhonePeDPSDK : NSObject
 - (nonnull instancetype)init;
 @end
+
+
 
 
 

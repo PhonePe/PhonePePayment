@@ -1,5 +1,5 @@
 PODS:
-  - PhonePePayment (2.0.0)
+  - PhonePePayment (2.1.3)
 
 DEPENDENCIES:
   - PhonePePayment (from `../../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  PhonePePayment: 3845fcef59370fc9cb119cd15182999a428fa6ee
+  PhonePePayment: fdd5ca4f21e85961c0d24a0d5c08ac33621584cf
 
 PODFILE CHECKSUM: f9d3c5ba8451f60c45e9736f8b76c010b672b570
 

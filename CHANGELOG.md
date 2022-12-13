@@ -1,3 +1,9 @@
+## [2.3.0]
+- Now use B2B flow 
+- Improved security
+- Improved performance
+
+
 ## [2.1.3]
 - Now Support Open Intent.
 - IntentCompletion Fix.
