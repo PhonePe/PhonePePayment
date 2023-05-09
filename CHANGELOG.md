@@ -1,3 +1,7 @@
+## [2.4.0]
+- Added support for simulation Environment
+
+
 ## [2.3.1]
 - Added support for B2B flow
 - Improved security

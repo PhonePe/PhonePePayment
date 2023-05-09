@@ -221,11 +221,13 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentStage = 0,
   EnvironmentUat = 1,
   EnvironmentProduction = 2,
+  EnvironmentStage_simulation = 3,
+  EnvironmentUat_simulation = 4,
 };
 
 
-SWIFT_CLASS("_TtC14PhonePePayment12PhonePeDPSDK")
-@interface PhonePeDPSDK : NSObject
+SWIFT_CLASS("_TtC14PhonePePayment9PPPayment")
+@interface PPPayment : NSObject
 - (nonnull instancetype)init;
 @end
 
@@ -461,11 +463,13 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentStage = 0,
   EnvironmentUat = 1,
   EnvironmentProduction = 2,
+  EnvironmentStage_simulation = 3,
+  EnvironmentUat_simulation = 4,
 };
 
 
-SWIFT_CLASS("_TtC14PhonePePayment12PhonePeDPSDK")
-@interface PhonePeDPSDK : NSObject
+SWIFT_CLASS("_TtC14PhonePePayment9PPPayment")
+@interface PPPayment : NSObject
 - (nonnull instancetype)init;
 @end
 
@@ -701,11 +705,13 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentStage = 0,
   EnvironmentUat = 1,
   EnvironmentProduction = 2,
+  EnvironmentStage_simulation = 3,
+  EnvironmentUat_simulation = 4,
 };
 
 
-SWIFT_CLASS("_TtC14PhonePePayment12PhonePeDPSDK")
-@interface PhonePeDPSDK : NSObject
+SWIFT_CLASS("_TtC14PhonePePayment9PPPayment")
+@interface PPPayment : NSObject
 - (nonnull instancetype)init;
 @end
 
