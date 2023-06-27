@@ -11,6 +11,8 @@ import WebKit
   case stage
   case uat
   case production
+  case stage_simulation
+  case uat_simulation
   public var description: Swift.String {
     get
   }
@@ -53,6 +55,8 @@ public enum PPTransactionStatus : Swift.String {
   case FAILED
   case PENDING
   case CANCELLED
+  case USER_CANCEL
+  case TIMED_OUT
   case UNKNOWN
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -61,12 +65,14 @@ public enum PPTransactionStatus : Swift.String {
   }
 }
 public typealias PPTransactionCompletion = (PhonePePayment.DPSTransactionRequest?, PhonePePayment.PPResultState) -> Swift.Void
-public typealias PPPayment = PhonePePayment.PhonePeDPSDK
-@_inheritsConvenienceInitializers @objc public class PhonePeDPSDK : ObjectiveC.NSObject {
+@available(*, deprecated, message: "PhonePeDPSDK class now deprecated. Please use PPPayment instead")
+public typealias PhonePeDPSDK = PhonePePayment.PPPayment
+@_inheritsConvenienceInitializers @objc final public class PPPayment : ObjectiveC.NSObject {
   public static var enableDebugLogs: Swift.Bool {
     get
     set
   }
+  public static var phonePeAppId: Swift.String?
   public static var version: Swift.String?
   public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil)
   @objc convenience override dynamic public init()
@@ -75,9 +81,9 @@ public typealias PPPayment = PhonePePayment.PhonePeDPSDK
   public static func isPaytmAppPresent() -> Swift.Bool
   public static func isGPayAppPresent() -> Swift.Bool
   public static func checkDeeplink(_ url: Foundation.URL) -> Swift.Bool
-  public func startPhonePeTransactionRequest(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
-  public func startPG(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
-  public func handlePGResult(map: [Swift.String : Any], on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
+  final public func startPhonePeTransactionRequest(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
+  final public func startPG(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
+  final public func handlePGResult(map: [Swift.String : Any], on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
   @objc deinit
 }
 public enum ThreadSafe {
