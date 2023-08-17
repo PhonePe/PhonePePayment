@@ -64,6 +64,19 @@ public enum PPTransactionStatus : Swift.String {
     get
   }
 }
+public enum SDKType : Swift.String {
+  case native
+  case flutter
+  case react_native
+  case ionic
+  case cordova
+  case xamarin
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public typealias PPTransactionCompletion = (PhonePePayment.DPSTransactionRequest?, PhonePePayment.PPResultState) -> Swift.Void
 @available(*, deprecated, message: "PhonePeDPSDK class now deprecated. Please use PPPayment instead")
 public typealias PhonePeDPSDK = PhonePePayment.PPPayment
@@ -74,7 +87,11 @@ public typealias PhonePeDPSDK = PhonePePayment.PPPayment
   }
   public static var phonePeAppId: Swift.String?
   public static var version: Swift.String?
+  final public func setAdditionalInfo(sdkType: PhonePePayment.SDKType)
+  public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil, appId: Swift.String)
+  @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
   public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil)
+  @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
   @objc convenience override dynamic public init()
   public static func getPackageSignature() -> Swift.String
   public static func isPhonePeInstalled() -> Swift.Bool
@@ -185,3 +202,6 @@ extension PhonePePayment.Environment : Swift.RawRepresentable {}
 extension PhonePePayment.PPTransactionStatus : Swift.Equatable {}
 extension PhonePePayment.PPTransactionStatus : Swift.Hashable {}
 extension PhonePePayment.PPTransactionStatus : Swift.RawRepresentable {}
+extension PhonePePayment.SDKType : Swift.Equatable {}
+extension PhonePePayment.SDKType : Swift.Hashable {}
+extension PhonePePayment.SDKType : Swift.RawRepresentable {}

@@ -1,3 +1,8 @@
+## [2.5.0]
+- Updated Init for SDK
+- Code Improvement
+
+
 ## [2.4.1]
 - Added support for simulation Environment
 
