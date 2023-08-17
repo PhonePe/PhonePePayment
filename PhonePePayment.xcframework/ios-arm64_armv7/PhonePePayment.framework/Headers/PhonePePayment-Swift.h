@@ -228,7 +228,7 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 
 SWIFT_CLASS("_TtC14PhonePePayment9PPPayment")
 @interface PPPayment : NSObject
-- (nonnull instancetype)init;
+- (nonnull instancetype)init SWIFT_DEPRECATED_MSG("init method now deprecated. Please use new method instead");
 @end
 
 
@@ -470,7 +470,7 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 
 SWIFT_CLASS("_TtC14PhonePePayment9PPPayment")
 @interface PPPayment : NSObject
-- (nonnull instancetype)init;
+- (nonnull instancetype)init SWIFT_DEPRECATED_MSG("init method now deprecated. Please use new method instead");
 @end
 
 
