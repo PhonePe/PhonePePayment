@@ -1,3 +1,7 @@
+## [2.5.1]
+- Improve Security
+
+
 ## [2.5.0]
 - Updated Init for SDK
 - Code Improvement
