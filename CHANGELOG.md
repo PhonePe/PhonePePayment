@@ -1,3 +1,7 @@
+## [2.6.0]
+- Improve Analytics
+
+
 ## [2.5.1]
 - Improve Security
 
