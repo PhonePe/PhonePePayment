@@ -1,3 +1,7 @@
+## [2.6.1]
+- Improve Logging and Monitoring
+
+
 ## [2.6.0]
 - Improve Analytics
 
