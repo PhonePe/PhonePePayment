@@ -1,5 +1,5 @@
-## [2.6.1]
-- Improve Logging and Monitoring
+## [2.6.2]
+- Pod Release
 
 
 ## [2.6.0]
