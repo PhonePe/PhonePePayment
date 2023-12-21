@@ -10,10 +10,8 @@ import UIKit
 import WebKit
 @objc public enum Environment : Swift.Int {
   case stage
-  case uat
   case production
-  case stage_simulation
-  case uat_simulation
+  case sandbox
   public var description: Swift.String {
     get
   }
@@ -31,7 +29,9 @@ extension Environment : Swift.CaseIterable {
 }
 public typealias PPTransactionRequest = PhonePePayment.DPSTransactionRequest
 @objc public class DPSTransactionRequest : ObjectiveC.NSObject {
+  @available(*, deprecated, renamed: "init(body:apiEndPoint:checksum:headers:appSchema:)")
   public init(body: Swift.String, apiEndPoint: Swift.String, checksum: Swift.String, headers: [Swift.String : Swift.String]?, callBackURL: Swift.String)
+  public init(body: Swift.String, apiEndPoint: Swift.String, checksum: Swift.String, headers: [Swift.String : Swift.String]?, appSchema: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -95,6 +95,7 @@ public typealias PhonePeDPSDK = PhonePePayment.PPPayment
   @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
   @objc convenience override dynamic public init()
   public static func getPackageSignature() -> Swift.String
+  public static func getUPIAppsInstalled() -> [Swift.String]
   public static func isPhonePeInstalled() -> Swift.Bool
   public static func isPaytmAppPresent() -> Swift.Bool
   public static func isGPayAppPresent() -> Swift.Bool

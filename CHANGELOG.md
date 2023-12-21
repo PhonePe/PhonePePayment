@@ -1,3 +1,9 @@
+## [2.7.0]
+- Intent Support for PayPage
+- Introduced getUPIAppsInstalled API
+- Removed UAT, UAT_SIMULATION Environment and Introduced SANDBOX Environment for easy integration
+
+
 ## [2.6.2]
 - Pod Release
 

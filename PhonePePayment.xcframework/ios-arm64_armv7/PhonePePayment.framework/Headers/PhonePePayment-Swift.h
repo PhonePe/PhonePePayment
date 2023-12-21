@@ -221,10 +221,8 @@ SWIFT_CLASS("_TtC14PhonePePayment21DPSTransactionRequest")
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentStage = 0,
-  EnvironmentUat = 1,
-  EnvironmentProduction = 2,
-  EnvironmentStage_simulation = 3,
-  EnvironmentUat_simulation = 4,
+  EnvironmentProduction = 1,
+  EnvironmentSandbox = 2,
 };
 
 
@@ -465,10 +463,8 @@ SWIFT_CLASS("_TtC14PhonePePayment21DPSTransactionRequest")
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentStage = 0,
-  EnvironmentUat = 1,
-  EnvironmentProduction = 2,
-  EnvironmentStage_simulation = 3,
-  EnvironmentUat_simulation = 4,
+  EnvironmentProduction = 1,
+  EnvironmentSandbox = 2,
 };
 
 
