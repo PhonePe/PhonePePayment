@@ -210,6 +210,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
 SWIFT_CLASS("_TtC14PhonePePayment21DPSTransactionRequest")
 @interface DPSTransactionRequest : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -217,12 +218,11 @@ SWIFT_CLASS("_TtC14PhonePePayment21DPSTransactionRequest")
 @end
 
 
+
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentStage = 0,
-  EnvironmentUat = 1,
-  EnvironmentProduction = 2,
-  EnvironmentStage_simulation = 3,
-  EnvironmentUat_simulation = 4,
+  EnvironmentProduction = 1,
+  EnvironmentSandbox = 2,
 };
 
 
@@ -452,6 +452,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
 SWIFT_CLASS("_TtC14PhonePePayment21DPSTransactionRequest")
 @interface DPSTransactionRequest : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -459,12 +460,11 @@ SWIFT_CLASS("_TtC14PhonePePayment21DPSTransactionRequest")
 @end
 
 
+
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentStage = 0,
-  EnvironmentUat = 1,
-  EnvironmentProduction = 2,
-  EnvironmentStage_simulation = 3,
-  EnvironmentUat_simulation = 4,
+  EnvironmentProduction = 1,
+  EnvironmentSandbox = 2,
 };
 
 

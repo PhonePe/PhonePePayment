@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PhonePePayment
 import CommonCrypto
+import CoreData
 import Foundation
 @_exported import PhonePePayment
 import Swift
@@ -9,10 +10,8 @@ import UIKit
 import WebKit
 @objc public enum Environment : Swift.Int {
   case stage
-  case uat
   case production
-  case stage_simulation
-  case uat_simulation
+  case sandbox
   public var description: Swift.String {
     get
   }
@@ -30,7 +29,9 @@ extension Environment : Swift.CaseIterable {
 }
 public typealias PPTransactionRequest = PhonePePayment.DPSTransactionRequest
 @objc public class DPSTransactionRequest : ObjectiveC.NSObject {
+  @available(*, deprecated, renamed: "init(body:apiEndPoint:checksum:headers:appSchema:)")
   public init(body: Swift.String, apiEndPoint: Swift.String, checksum: Swift.String, headers: [Swift.String : Swift.String]?, callBackURL: Swift.String)
+  public init(body: Swift.String, apiEndPoint: Swift.String, checksum: Swift.String, headers: [Swift.String : Swift.String]?, appSchema: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -67,15 +68,15 @@ public enum PPTransactionStatus : Swift.String {
 public enum SDKType : Swift.String {
   case native
   case flutter
-  case reactnative
+  case react_native
+  case ionic
+  case cordova
+  case xamarin
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
-}
-public struct PPPaymentAdditionalInfo {
-  public init(appId: Swift.String, sdkType: PhonePePayment.SDKType = .native)
 }
 public typealias PPTransactionCompletion = (PhonePePayment.DPSTransactionRequest?, PhonePePayment.PPResultState) -> Swift.Void
 @available(*, deprecated, message: "PhonePeDPSDK class now deprecated. Please use PPPayment instead")
@@ -87,12 +88,14 @@ public typealias PhonePeDPSDK = PhonePePayment.PPPayment
   }
   public static var phonePeAppId: Swift.String?
   public static var version: Swift.String?
-  public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil, info: PhonePePayment.PPPaymentAdditionalInfo)
+  final public func setAdditionalInfo(sdkType: PhonePePayment.SDKType)
+  public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil, appId: Swift.String)
   @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
   public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil)
   @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
   @objc convenience override dynamic public init()
   public static func getPackageSignature() -> Swift.String
+  public static func getUPIAppsInstalled() -> [Swift.String]
   public static func isPhonePeInstalled() -> Swift.Bool
   public static func isPaytmAppPresent() -> Swift.Bool
   public static func isGPayAppPresent() -> Swift.Bool
@@ -101,99 +104,6 @@ public typealias PhonePeDPSDK = PhonePePayment.PPPayment
   final public func startPG(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
   final public func handlePGResult(map: [Swift.String : Any], on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
   @objc deinit
-}
-public enum ThreadSafe {
-  final public class Dictionary<Key, Value> where Key : Swift.Hashable {
-    public init()
-    final public subscript(key: Key) -> Value? {
-      get
-      set
-    }
-    final public var keys: Swift.Dictionary<Key, Value>.Keys {
-      get
-    }
-    final public var values: Swift.Dictionary<Key, Value>.Values {
-      get
-    }
-    final public var count: Swift.Int {
-      get
-    }
-    final public func removeValue(forKey key: Key)
-    final public func removeAll()
-    final public func getUnsafeDictionary() -> [Key : Value]
-    @objc deinit
-  }
-}
-extension ThreadSafe {
-  public typealias Array = PhonePePayment.SynchronizedArray
-}
-public class SynchronizedArray<Element> {
-  public init()
-  convenience public init(_ array: [Element])
-  @objc deinit
-}
-extension SynchronizedArray {
-  public var toArray: [Element] {
-    get
-  }
-  public var first: Element? {
-    get
-  }
-  public var last: Element? {
-    get
-  }
-  public var count: Swift.Int {
-    get
-  }
-  public var isEmpty: Swift.Bool {
-    get
-  }
-  public var description: Swift.String {
-    get
-  }
-  public var arrayCollection: [Element] {
-    get
-  }
-}
-extension SynchronizedArray {
-  public func first(where predicate: (Element) -> Swift.Bool) -> Element?
-  public func last(where predicate: (Element) -> Swift.Bool) -> Element?
-  public func filter(_ isIncluded: @escaping (Element) -> Swift.Bool) -> PhonePePayment.SynchronizedArray<Element>
-  public func index(where predicate: (Element) -> Swift.Bool) -> Swift.Int?
-  public func sorted(by areInIncreasingOrder: (Element, Element) -> Swift.Bool) -> PhonePePayment.SynchronizedArray<Element>
-  public func map<ElementOfResult>(_ transform: @escaping (Element) -> ElementOfResult) -> [ElementOfResult]
-  public func compactMap<ElementOfResult>(_ transform: (Element) -> ElementOfResult?) -> [ElementOfResult]
-  public func reduce<ElementOfResult>(_ initialResult: ElementOfResult, _ nextPartialResult: @escaping (ElementOfResult, Element) -> ElementOfResult) -> ElementOfResult
-  public func reduce<ElementOfResult>(into initialResult: ElementOfResult, _ updateAccumulatingResult: @escaping (inout ElementOfResult, Element) -> Swift.Void) -> ElementOfResult
-  public func forEach(_ body: (Element) -> Swift.Void)
-  public func contains(where predicate: (Element) -> Swift.Bool) -> Swift.Bool
-  public func allSatisfy(_ predicate: (Element) -> Swift.Bool) -> Swift.Bool
-}
-extension SynchronizedArray {
-  public func append(_ element: Element)
-  public func append(_ elements: [Element])
-  public func insert(_ element: Element, at index: Swift.Int)
-  public func remove(at index: Swift.Int, completion: ((Element) -> Swift.Void)? = nil)
-  public func remove(where predicate: @escaping (Element) -> Swift.Bool, completion: (([Element]) -> Swift.Void)? = nil)
-  public func removeAll(completion: (([Element]) -> Swift.Void)? = nil)
-}
-extension SynchronizedArray {
-  public subscript(index: Swift.Int) -> Element? {
-    get
-    set
-  }
-}
-extension SynchronizedArray where Element : Swift.Equatable {
-  public func contains(_ element: Element) -> Swift.Bool
-  public func suffix(_ threshold: Swift.Int) -> [Element]
-}
-extension SynchronizedArray {
-  public static func += (left: inout PhonePePayment.SynchronizedArray<Element>, right: Element)
-  public static func += (left: inout PhonePePayment.SynchronizedArray<Element>, right: [Element])
-}
-extension SynchronizedArray : Swift.Sequence {
-  public typealias Iterator = Swift.IndexingIterator<[Element]>
-  public func makeIterator() -> PhonePePayment.SynchronizedArray<Element>.Iterator
 }
 extension PhonePePayment.Environment : Swift.Equatable {}
 extension PhonePePayment.Environment : Swift.Hashable {}
