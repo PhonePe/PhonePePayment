@@ -6,6 +6,12 @@ build/
 DerivedData/
 Pods/
 xcshareddata/
+/.build
+/Packages
+/*.xcodeproj
+.swiftpm/config/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
 
 ## Various settings
 *.pbxuser

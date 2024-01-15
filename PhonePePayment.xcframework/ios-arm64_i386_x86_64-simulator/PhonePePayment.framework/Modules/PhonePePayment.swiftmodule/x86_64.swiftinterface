@@ -89,7 +89,7 @@ public typealias PhonePeDPSDK = PhonePePayment.PPPayment
   public static var phonePeAppId: Swift.String?
   public static var version: Swift.String?
   final public func setAdditionalInfo(sdkType: PhonePePayment.SDKType)
-  public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil, appId: Swift.String)
+  public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil, appId: Swift.String?)
   @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
   public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil)
   @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
