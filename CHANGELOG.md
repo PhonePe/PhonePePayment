@@ -1,6 +1,7 @@
-## [2.7.2]
-- AppId made optional 
-- SPM Support
+## [2.7.3]
+- Optional appId support
+- added SPM Support 
+
 
 
 ## [2.7.0]
