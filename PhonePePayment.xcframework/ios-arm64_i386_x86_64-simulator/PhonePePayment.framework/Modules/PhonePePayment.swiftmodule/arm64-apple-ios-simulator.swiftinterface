@@ -8,6 +8,48 @@ import Foundation
 import Swift
 import UIKit
 import WebKit
+public struct B2BPGTransactionRequest {
+  public init(merchantId: Swift.String, orderId: Swift.String, token: Swift.String, appSchema: Swift.String, paymentMode: PhonePePayment.PaymentMode)
+}
+public enum PaymentMode {
+  case upiIntent(request: PhonePePayment.UPIIntentPaymentMode)
+  case upiCollect(request: PhonePePayment.UpiCollectPaymentMode)
+  case netBanking(request: PhonePePayment.NetbankingPaymentMode)
+  case paypage(request: PhonePePayment.PayPagePaymentMode)
+}
+public struct UPIIntentPaymentMode {
+  public init(targetApp: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public protocol PGBaseCollect : Swift.Encodable {
+  var type: Swift.String? { get }
+}
+public struct VPACollectDetails : PhonePePayment.PGBaseCollect {
+  public var type: Swift.String? {
+    get
+  }
+  public init(vpa: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class PhoneNumberDetails : PhonePePayment.PGBaseCollect {
+  public var type: Swift.String? {
+    get
+  }
+  public init(phoneNumber: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+}
+public struct UpiCollectPaymentMode {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(message: Swift.String, details: PhonePePayment.PGBaseCollect)
+}
+public struct NetbankingPaymentMode {
+  public init(bankId: Swift.String? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct PayPagePaymentMode {
+  public func encode(to encoder: Swift.Encoder) throws
+}
 @objc public enum Environment : Swift.Int {
   case stage
   case production
@@ -79,8 +121,6 @@ public enum SDKType : Swift.String {
   }
 }
 public typealias PPTransactionCompletion = (PhonePePayment.DPSTransactionRequest?, PhonePePayment.PPResultState) -> Swift.Void
-@available(*, deprecated, message: "PhonePeDPSDK class now deprecated. Please use PPPayment instead")
-public typealias PhonePeDPSDK = PhonePePayment.PPPayment
 @_inheritsConvenienceInitializers @objc final public class PPPayment : ObjectiveC.NSObject {
   public static var enableDebugLogs: Swift.Bool {
     get
@@ -89,22 +129,41 @@ public typealias PhonePeDPSDK = PhonePePayment.PPPayment
   public static var phonePeAppId: Swift.String?
   public static var version: Swift.String?
   final public func setAdditionalInfo(sdkType: PhonePePayment.SDKType)
-  public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil, appId: Swift.String)
-  @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
-  public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil)
-  @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
-  @objc convenience override dynamic public init()
+  public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil, appId: Swift.String?)
   public static func getPackageSignature() -> Swift.String
   public static func getUPIAppsInstalled() -> [Swift.String]
   public static func isPhonePeInstalled() -> Swift.Bool
   public static func isPaytmAppPresent() -> Swift.Bool
   public static func isGPayAppPresent() -> Swift.Bool
   public static func checkDeeplink(_ url: Foundation.URL) -> Swift.Bool
-  final public func startPhonePeTransactionRequest(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
-  final public func startPG(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
-  final public func handlePGResult(map: [Swift.String : Any], on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
+  @available(*, deprecated, message: "PhonePeDPSDK class now deprecated. Please use PPPayment instead")
+  public typealias PhonePeDPSDK = PhonePePayment.PPPayment
+  @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
+  public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil)
+  @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
+  @objc convenience override dynamic public init()
   @objc deinit
 }
+extension PPPayment {
+  final public func startPG(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
+  final public func handlePGResult(map: [Swift.String : Any], on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
+}
+extension PPPayment {
+  final public func startTransaction(request: PhonePePayment.B2BPGTransactionRequest, on viewController: UIKit.UIViewController, completion: @escaping PhonePePayment.PPTransactionCompletion)
+  final public func startCheckoutFlow(merchantId: Swift.String, orderId: Swift.String, token: Swift.String, on viewController: UIKit.UIViewController, completion: @escaping PhonePePayment.PPTransactionCompletion)
+}
+extension PPPayment {
+  final public func startPhonePeTransactionRequest(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
+}
+extension Optional where Wrapped : Swift.ExpressibleByStringLiteral {
+  public var emptyIfNil: Wrapped {
+    get
+  }
+}
+extension PhonePePayment.UPIIntentPaymentMode : Swift.Encodable {}
+extension PhonePePayment.UpiCollectPaymentMode : Swift.Encodable {}
+extension PhonePePayment.NetbankingPaymentMode : Swift.Encodable {}
+extension PhonePePayment.PayPagePaymentMode : Swift.Encodable {}
 extension PhonePePayment.Environment : Swift.Equatable {}
 extension PhonePePayment.Environment : Swift.Hashable {}
 extension PhonePePayment.Environment : Swift.RawRepresentable {}

@@ -1,3 +1,9 @@
+## [2.7.3]
+- Optional appId support
+- added SPM Support 
+
+
+
 ## [2.7.0]
 - Intent Support for PayPage
 - Introduced getUPIAppsInstalled API
