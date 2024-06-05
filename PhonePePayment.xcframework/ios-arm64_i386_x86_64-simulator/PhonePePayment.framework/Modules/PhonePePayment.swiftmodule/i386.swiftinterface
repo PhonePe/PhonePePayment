@@ -101,6 +101,7 @@ public enum PPTransactionStatus : Swift.String {
   case USER_CANCEL
   case TIMED_OUT
   case UNKNOWN
+  case COMPLETED
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -156,6 +157,16 @@ extension PPPayment {
   final public func startPhonePeTransactionRequest(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
 }
 extension Optional where Wrapped : Swift.ExpressibleByStringLiteral {
+  public var emptyIfNil: Wrapped {
+    get
+  }
+}
+extension Optional where Wrapped : Swift.ExpressibleByBooleanLiteral {
+  public var falseIfNil: Wrapped {
+    get
+  }
+}
+extension Optional where Wrapped : Swift.ExpressibleByDictionaryLiteral {
   public var emptyIfNil: Wrapped {
     get
   }

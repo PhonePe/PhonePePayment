@@ -1,3 +1,8 @@
+## [3.0.2]
+- Introduced Checkout flow
+- Performance Improvement
+
+
 ## [3.0.1]
 - Order-Based Payments
 - Security Improvement
