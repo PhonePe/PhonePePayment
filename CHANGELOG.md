@@ -1,3 +1,9 @@
+## [4.0.0]
+- Introduced Saved Instruments 
+- Merchants can link the saved instruments on the checkout page
+- Standard Checkout Enhancements
+
+
 ## [3.0.3]
 - Remove Bitcode
 
@@ -5,7 +11,6 @@
 ## [3.0.2]
 - Introduced Checkout flow
 - Performance Improvement
-
 
 ## [3.0.1]
 - Order-Based Payments

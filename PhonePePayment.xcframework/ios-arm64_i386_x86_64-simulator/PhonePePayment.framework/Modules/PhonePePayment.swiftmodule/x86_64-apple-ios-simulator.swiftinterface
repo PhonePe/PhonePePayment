@@ -9,6 +9,7 @@ import Swift
 import UIKit
 import WebKit
 public struct B2BPGTransactionRequest {
+  public mutating func setHeaders(headers: [Swift.String : Swift.String])
   public init(merchantId: Swift.String, orderId: Swift.String, token: Swift.String, appSchema: Swift.String, paymentMode: PhonePePayment.PaymentMode)
 }
 public enum PaymentMode {
@@ -16,39 +17,7 @@ public enum PaymentMode {
   case upiCollect(request: PhonePePayment.UpiCollectPaymentMode)
   case netBanking(request: PhonePePayment.NetbankingPaymentMode)
   case paypage(request: PhonePePayment.PayPagePaymentMode)
-}
-public struct UPIIntentPaymentMode {
-  public init(targetApp: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
-}
-public protocol PGBaseCollect : Swift.Encodable {
-  var type: Swift.String? { get }
-}
-public struct VPACollectDetails : PhonePePayment.PGBaseCollect {
-  public var type: Swift.String? {
-    get
-  }
-  public init(vpa: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
-}
-public class PhoneNumberDetails : PhonePePayment.PGBaseCollect {
-  public var type: Swift.String? {
-    get
-  }
-  public init(phoneNumber: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
-}
-public struct UpiCollectPaymentMode {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(message: Swift.String, details: PhonePePayment.PGBaseCollect)
-}
-public struct NetbankingPaymentMode {
-  public init(bankId: Swift.String? = nil)
-  public func encode(to encoder: Swift.Encoder) throws
-}
-public struct PayPagePaymentMode {
-  public func encode(to encoder: Swift.Encoder) throws
+  case ppeIntent(request: PhonePePayment.PPEIntentPaymentMode)
 }
 @objc public enum Environment : Swift.Int {
   case stage
@@ -121,40 +90,147 @@ public enum SDKType : Swift.String {
     get
   }
 }
+public protocol PGBaseCollect : Swift.Encodable {
+  var type: Swift.String? { get }
+}
+public struct VPACollectDetails : PhonePePayment.PGBaseCollect {
+  public var type: Swift.String? {
+    get
+  }
+  public init(vpa: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct PhoneNumberDetails : PhonePePayment.PGBaseCollect {
+  public var type: Swift.String? {
+    get
+  }
+  public init(phoneNumber: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct UpiCollectPaymentMode {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(message: Swift.String, details: PhonePePayment.PGBaseCollect)
+}
+public struct PPEIntentPaymentMode {
+  public init(accountId: Swift.String)
+  public init()
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct AccountConstraint {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct UPIIntentPaymentMode {
+  public init(targetApp: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct NetbankingPaymentMode {
+  public init(bankId: Swift.String? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct PayPagePaymentMode {
+  public init()
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension PPPayment {
+  final public func startPG(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
+}
+public typealias PaymentOptionConsentCompletion = (PhonePePayment.OptionState) -> Swift.Void
 public typealias PPTransactionCompletion = (PhonePePayment.DPSTransactionRequest?, PhonePePayment.PPResultState) -> Swift.Void
 @_inheritsConvenienceInitializers @objc final public class PPPayment : ObjectiveC.NSObject {
   public static var enableDebugLogs: Swift.Bool {
     get
     set
   }
-  public static var phonePeAppId: Swift.String?
   public static var version: Swift.String?
+  public static var phonePeAppId: Swift.String?
+  public init(environment: PhonePePayment.Environment = .production, flowId: Swift.String, merchantId: Swift.String, enableLogging: Swift.Bool? = nil, appId: Swift.String? = nil)
   final public func setAdditionalInfo(sdkType: PhonePePayment.SDKType)
-  public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil, appId: Swift.String?)
   public static func getPackageSignature() -> Swift.String
-  public static func getUPIAppsInstalled() -> [Swift.String]
-  public static func isPhonePeInstalled() -> Swift.Bool
-  public static func isPaytmAppPresent() -> Swift.Bool
-  public static func isGPayAppPresent() -> Swift.Bool
   public static func checkDeeplink(_ url: Foundation.URL) -> Swift.Bool
   @available(*, deprecated, message: "PhonePeDPSDK class now deprecated. Please use PPPayment instead")
   public typealias PhonePeDPSDK = PhonePePayment.PPPayment
   @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
   public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil)
   @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
+  public init(environment: PhonePePayment.Environment = .production, enableLogging: Swift.Bool? = nil, appId: Swift.String?)
+  @available(*, deprecated, message: "init method now deprecated. Please use new method instead")
   @objc convenience override dynamic public init()
   @objc deinit
 }
 extension PPPayment {
-  final public func startPG(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
   final public func handlePGResult(map: [Swift.String : Any], on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
 }
 extension PPPayment {
-  final public func startTransaction(request: PhonePePayment.B2BPGTransactionRequest, on viewController: UIKit.UIViewController, completion: @escaping PhonePePayment.PPTransactionCompletion)
-  final public func startCheckoutFlow(merchantId: Swift.String, orderId: Swift.String, token: Swift.String, on viewController: UIKit.UIViewController, completion: @escaping PhonePePayment.PPTransactionCompletion)
+  final public func startPhonePeTransactionRequest(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
 }
 extension PPPayment {
-  final public func startPhonePeTransactionRequest(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
+  public static func getUPIAppsInstalled() -> [Swift.String]
+  public static func isPhonePeInstalled() -> Swift.Bool
+  public static func isPaytmAppPresent() -> Swift.Bool
+  public static func isGPayAppPresent() -> Swift.Bool
+}
+public enum OptionState : Swift.String, Swift.Codable {
+  case savedInstruments
+  case consentNotGranted
+  case appReOpened
+  case noValidInstrument
+  case consentGranted
+  case consentIntent
+  case unableToOpenApp
+  case openAppSuccess
+  case noValidApp
+  case consentLimitBreached
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Instrument : Swift.Codable {
+  public let type: Swift.String?
+  public let title: Swift.String?
+  public let subTitle: Swift.String?
+  public let logoUrl: Swift.String?
+  public let accountId: Swift.String?
+  public let priority: Swift.Int?
+  public let available: Swift.Bool?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ConsentRevokeRequest : Swift.Encodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct SavedInstrumentResult {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum SavedInstrumentFailure : Swift.Error, Swift.Equatable {
+  case noValidApp
+  case apiFailure(message: Swift.String?)
+  case appReopened(message: Swift.String?)
+  public static func == (a: PhonePePayment.SavedInstrumentFailure, b: PhonePePayment.SavedInstrumentFailure) -> Swift.Bool
+}
+public protocol PhonePeUserAccountProvider : AnyObject {
+  func onInstrumentsReady(instruments: [PhonePePayment.Instrument]?, failure: PhonePePayment.SavedInstrumentFailure?)
+  func showLinkButton()
+  func hideLinkButton(_ state: PhonePePayment.OptionState)
+  func onConsentGiven()
+  func onConsentNotGiven()
+}
+extension PhonePeUserAccountProvider {
+  public func onConsentGiven()
+}
+@_hasMissingDesignatedInitializers public class PhonePeUserAccount {
+  public init(appSchema: Swift.String, delegate: PhonePePayment.PhonePeUserAccountProvider)
+  public func setHeaders(_ headers: [Swift.String : Swift.String])
+  public func getUserInstruments(token: Swift.String)
+  public func link()
+  @objc deinit
+}
+extension PPPayment {
+  final public func startTransaction(request: PhonePePayment.B2BPGTransactionRequest, on viewController: UIKit.UIViewController, completion: @escaping PhonePePayment.PPTransactionCompletion)
+  final public func startCheckoutFlow(merchantId: Swift.String, orderId: Swift.String, token: Swift.String, appSchema: Swift.String, on viewController: UIKit.UIViewController, completion: @escaping PhonePePayment.PPTransactionCompletion)
 }
 extension Optional where Wrapped : Swift.ExpressibleByStringLiteral {
   public var emptyIfNil: Wrapped {
@@ -171,10 +247,6 @@ extension Optional where Wrapped : Swift.ExpressibleByDictionaryLiteral {
     get
   }
 }
-extension PhonePePayment.UPIIntentPaymentMode : Swift.Encodable {}
-extension PhonePePayment.UpiCollectPaymentMode : Swift.Encodable {}
-extension PhonePePayment.NetbankingPaymentMode : Swift.Encodable {}
-extension PhonePePayment.PayPagePaymentMode : Swift.Encodable {}
 extension PhonePePayment.Environment : Swift.Equatable {}
 extension PhonePePayment.Environment : Swift.Hashable {}
 extension PhonePePayment.Environment : Swift.RawRepresentable {}
@@ -184,3 +256,14 @@ extension PhonePePayment.PPTransactionStatus : Swift.RawRepresentable {}
 extension PhonePePayment.SDKType : Swift.Equatable {}
 extension PhonePePayment.SDKType : Swift.Hashable {}
 extension PhonePePayment.SDKType : Swift.RawRepresentable {}
+extension PhonePePayment.UpiCollectPaymentMode : Swift.Encodable {}
+extension PhonePePayment.PPEIntentPaymentMode : Swift.Encodable {}
+extension PhonePePayment.AccountConstraint : Swift.Encodable {}
+extension PhonePePayment.UPIIntentPaymentMode : Swift.Encodable {}
+extension PhonePePayment.NetbankingPaymentMode : Swift.Encodable {}
+extension PhonePePayment.PayPagePaymentMode : Swift.Encodable {}
+extension PhonePePayment.OptionState : Swift.Equatable {}
+extension PhonePePayment.OptionState : Swift.Hashable {}
+extension PhonePePayment.OptionState : Swift.RawRepresentable {}
+extension PhonePePayment.SavedInstrumentResult : Swift.Decodable {}
+extension PhonePePayment.SavedInstrumentResult : Swift.Encodable {}

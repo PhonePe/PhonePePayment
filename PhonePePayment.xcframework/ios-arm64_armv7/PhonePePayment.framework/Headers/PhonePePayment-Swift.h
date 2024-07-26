@@ -238,6 +238,9 @@ SWIFT_CLASS("_TtC14PhonePePayment9PPPayment")
 
 
 
+
+
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -475,6 +478,9 @@ SWIFT_CLASS("_TtC14PhonePePayment9PPPayment")
 @interface PPPayment : NSObject
 - (nonnull instancetype)init SWIFT_DEPRECATED_MSG("init method now deprecated. Please use new method instead");
 @end
+
+
+
 
 
 
