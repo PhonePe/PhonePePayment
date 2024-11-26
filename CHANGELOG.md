@@ -1,3 +1,7 @@
+## [4.0.1]
+- Now support 3 more apps - CRED, AMAZON PAY and BHIM.
+
+
 ## [4.0.0]
 - Introduced Saved Instruments 
 - Merchants can link the saved instruments on the checkout page
