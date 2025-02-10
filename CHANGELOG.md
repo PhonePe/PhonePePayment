@@ -1,3 +1,8 @@
+## [4.0.2]
+- OCP Added
+- Support more schemas (ppemerchantsdkv4, ppemerchantsdkv5)
+
+
 ## [4.0.1]
 - Now support 3 more apps - CRED, AMAZON PAY and BHIM.
 

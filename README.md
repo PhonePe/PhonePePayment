@@ -46,6 +46,13 @@ In your Info.plist, create or append a new Array type node LSApplicationQueriesS
         <string>ppemerchantsdkv1</string>
         <string>ppemerchantsdkv2</string>
         <string>ppemerchantsdkv3</string>
+        <string>ppemerchantsdkv4</string>
+        <string>ppemerchantsdkv5</string>
+        <string>credpay</string>
+        <string>amazonpay</string>
+        <string>bhim</string>
+        <string>gpay</string>
+        <string>paytmmp</string>
 </array>
 ```
 ![LSApplicationQueriesSchemes](https://files.readme.io/256dde4-LSApplicationQueriesSchemes.png)

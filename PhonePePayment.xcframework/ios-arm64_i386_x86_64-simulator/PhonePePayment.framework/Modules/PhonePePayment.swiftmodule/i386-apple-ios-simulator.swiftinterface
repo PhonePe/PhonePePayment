@@ -113,6 +113,7 @@ public struct UpiCollectPaymentMode {
 }
 public struct PPEIntentPaymentMode {
   public init(accountId: Swift.String)
+  public init(oneClickPay: Swift.Bool = true)
   public init()
   public func encode(to encoder: Swift.Encoder) throws
 }
