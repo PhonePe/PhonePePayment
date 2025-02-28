@@ -39,6 +39,11 @@ extension Environment : Swift.CaseIterable {
   }
 }
 public typealias PPTransactionRequest = PhonePePayment.DPSTransactionRequest
+@objc public class PPAvailabilityCheckRequest : ObjectiveC.NSObject {
+  public init(data: Swift.String, checksum: Swift.String, headers: [Swift.String : Swift.String]? = nil)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public class DPSTransactionRequest : ObjectiveC.NSObject {
   @available(*, deprecated, renamed: "init(body:apiEndPoint:checksum:headers:appSchema:)")
   public init(body: Swift.String, apiEndPoint: Swift.String, checksum: Swift.String, headers: [Swift.String : Swift.String]?, callBackURL: Swift.String)
@@ -135,8 +140,12 @@ public struct PayPagePaymentMode {
 extension PPPayment {
   final public func startPG(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
 }
+extension PPPayment {
+  final public func checkAvailability(request: PhonePePayment.PPAvailabilityCheckRequest, completion: @escaping PhonePePayment.PPAvailabilityCompletion)
+}
 public typealias PaymentOptionConsentCompletion = (PhonePePayment.OptionState) -> Swift.Void
 public typealias PPTransactionCompletion = (PhonePePayment.DPSTransactionRequest?, PhonePePayment.PPResultState) -> Swift.Void
+public typealias PPAvailabilityCompletion = (Swift.Bool, Swift.String) -> Swift.Void
 @_inheritsConvenienceInitializers @objc final public class PPPayment : ObjectiveC.NSObject {
   public static var enableDebugLogs: Swift.Bool {
     get

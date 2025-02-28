@@ -226,10 +226,18 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 };
 
 
+SWIFT_CLASS("_TtC14PhonePePayment26PPAvailabilityCheckRequest")
+@interface PPAvailabilityCheckRequest : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC14PhonePePayment9PPPayment")
 @interface PPPayment : NSObject
 - (nonnull instancetype)init SWIFT_DEPRECATED_MSG("init method now deprecated. Please use new method instead");
 @end
+
 
 
 
@@ -474,10 +482,18 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 };
 
 
+SWIFT_CLASS("_TtC14PhonePePayment26PPAvailabilityCheckRequest")
+@interface PPAvailabilityCheckRequest : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC14PhonePePayment9PPPayment")
 @interface PPPayment : NSObject
 - (nonnull instancetype)init SWIFT_DEPRECATED_MSG("init method now deprecated. Please use new method instead");
 @end
+
 
 
 
