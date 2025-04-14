@@ -116,13 +116,18 @@ public struct UpiCollectPaymentMode {
   public func encode(to encoder: Swift.Encoder) throws
   public init(message: Swift.String, details: PhonePePayment.PGBaseCollect)
 }
+public enum ConstraintType {
+  case wallet
+  case oneClickPay
+  case card(id: Swift.String)
+  case account(id: Swift.String)
+}
 public struct PPEIntentPaymentMode {
-  public init(accountId: Swift.String)
-  public init(oneClickPay: Swift.Bool = true)
+  public init(type withConstraint: Swift.String?, id: Swift.String? = nil)
   public init()
   public func encode(to encoder: Swift.Encoder) throws
 }
-public struct AccountConstraint {
+public struct BoltConstraint {
   public func encode(to encoder: Swift.Encoder) throws
 }
 public struct UPIIntentPaymentMode {
@@ -202,9 +207,23 @@ public struct Instrument : Swift.Codable {
   public let title: Swift.String?
   public let subTitle: Swift.String?
   public let logoUrl: Swift.String?
-  public let accountId: Swift.String?
+  public let id: Swift.String?
   public let priority: Swift.Int?
   public let available: Swift.Bool?
+  public let subType: Swift.String?
+  public let bankCode: Swift.String?
+  public let networkLogoUrl: Swift.String?
+  public let metaInfo: [[Swift.String : PhonePePayment.AnyValue]]?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum AnyValue : Swift.Codable {
+  case string(Swift.String)
+  case int(Swift.Int)
+  case double(Swift.Double)
+  case bool(Swift.Bool)
+  case null
+  public func getValue() -> Any?
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -268,7 +287,7 @@ extension PhonePePayment.SDKType : Swift.Hashable {}
 extension PhonePePayment.SDKType : Swift.RawRepresentable {}
 extension PhonePePayment.UpiCollectPaymentMode : Swift.Encodable {}
 extension PhonePePayment.PPEIntentPaymentMode : Swift.Encodable {}
-extension PhonePePayment.AccountConstraint : Swift.Encodable {}
+extension PhonePePayment.BoltConstraint : Swift.Encodable {}
 extension PhonePePayment.UPIIntentPaymentMode : Swift.Encodable {}
 extension PhonePePayment.NetbankingPaymentMode : Swift.Encodable {}
 extension PhonePePayment.PayPagePaymentMode : Swift.Encodable {}

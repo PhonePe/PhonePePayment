@@ -1,3 +1,9 @@
+## [5.0.0]
+- Add the DT Card in Bolt Flow
+- Update contracts for Bolt flow 
+- Add extensibility in Bolt Flow
+
+
 ## [4.0.3]
 - Add check availability for the PhonePe Payments
 
