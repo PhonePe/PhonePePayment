@@ -1,3 +1,8 @@
+## [5.1.0]
+- Improved security
+- Support Super.Money UPI App
+
+
 ## [5.0.0]
 - Add the DT Card in Bolt Flow
 - Update contracts for Bolt flow 
