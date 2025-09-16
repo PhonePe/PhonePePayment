@@ -1,3 +1,9 @@
+## [5.2.0]
+- Add the New Card Payment Mode 
+- Merchants can now support the card Payments
+- Provide the new method to validate the card details
+
+
 ## [5.1.0]
 - Improved security
 - Support Super.Money UPI App

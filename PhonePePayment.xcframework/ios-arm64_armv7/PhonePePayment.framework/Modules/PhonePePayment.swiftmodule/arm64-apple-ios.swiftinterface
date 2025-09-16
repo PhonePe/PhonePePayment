@@ -18,6 +18,7 @@ public enum PaymentMode {
   case netBanking(request: PhonePePayment.NetbankingPaymentMode)
   case paypage(request: PhonePePayment.PayPagePaymentMode)
   case ppeIntent(request: PhonePePayment.PPEIntentPaymentMode)
+  case newCard(request: PhonePePayment.NewCardPaymentMode)
 }
 @objc public enum Environment : Swift.Int {
   case stage
@@ -148,6 +149,9 @@ extension PPPayment {
 extension PPPayment {
   final public func checkAvailability(request: PhonePePayment.PPAvailabilityCheckRequest, completion: @escaping PhonePePayment.PPAvailabilityCompletion)
 }
+extension PPPayment {
+  final public func validateCardDetails(mode: PhonePePayment.NewCardPaymentMode, completion: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
+}
 public typealias PaymentOptionConsentCompletion = (PhonePePayment.OptionState) -> Swift.Void
 public typealias PPTransactionCompletion = (PhonePePayment.DPSTransactionRequest?, PhonePePayment.PPResultState) -> Swift.Void
 public typealias PPAvailabilityCompletion = (Swift.Bool, Swift.String) -> Swift.Void
@@ -256,6 +260,10 @@ extension PhonePeUserAccountProvider {
   public func getUserInstruments(token: Swift.String)
   public func link()
   @objc deinit
+}
+public struct NewCardPaymentMode : Swift.Encodable {
+  public init(cardNumber: Swift.String, cardHolderName: Swift.String, cvv: Swift.String, expiryMonth: Swift.String, expiryYear: Swift.String, merchantUserId: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
 }
 extension PPPayment {
   final public func startTransaction(request: PhonePePayment.B2BPGTransactionRequest, on viewController: UIKit.UIViewController, completion: @escaping PhonePePayment.PPTransactionCompletion)
