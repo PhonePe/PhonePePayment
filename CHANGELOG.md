@@ -1,3 +1,53 @@
+## [5.2.0]
+- Add the New Card Payment Mode 
+- Merchants can now support the card Payments
+- Provide the new method to validate the card details
+
+
+## [5.1.0]
+- Improved security
+- Support Super.Money UPI App
+
+
+## [5.0.0]
+- Add the DT Card in Bolt Flow
+- Update contracts for Bolt flow 
+- Add extensibility in Bolt Flow
+
+
+## [4.0.3]
+- Add check availability for the PhonePe Payments
+
+
+## [4.0.2]
+- OCP Added
+- Support more schemas (ppemerchantsdkv4, ppemerchantsdkv5)
+
+
+## [4.0.1]
+- Now support 3 more apps - CRED, AMAZON PAY and BHIM.
+
+
+## [4.0.0]
+- Introduced Saved Instruments 
+- Merchants can link the saved instruments on the checkout page
+- Standard Checkout Enhancements
+
+
+## [3.0.3]
+- Remove Bitcode
+
+
+## [3.0.2]
+- Introduced Checkout flow
+- Performance Improvement
+
+## [3.0.1]
+- Order-Based Payments
+- Security Improvement
+- Performance Improvement
+
+
 ## [2.7.3]
 - Optional appId support
 - added SPM Support 
