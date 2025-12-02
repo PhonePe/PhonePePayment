@@ -1,3 +1,7 @@
+## [5.3.1]
+Dynamic Bolt Mapping Id
+
+
 ## [5.2.0]
 - Add the New Card Payment Mode 
 - Merchants can now support the card Payments
