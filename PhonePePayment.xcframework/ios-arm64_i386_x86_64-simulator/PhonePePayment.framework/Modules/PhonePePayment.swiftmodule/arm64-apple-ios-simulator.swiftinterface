@@ -217,6 +217,8 @@ public struct Instrument : Swift.Codable {
   public let subType: Swift.String?
   public let bankCode: Swift.String?
   public let networkLogoUrl: Swift.String?
+  public let tokenBin: Swift.String?
+  public let panRefNo: Swift.String?
   public let metaInfo: [[Swift.String : PhonePePayment.AnyValue]]?
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
