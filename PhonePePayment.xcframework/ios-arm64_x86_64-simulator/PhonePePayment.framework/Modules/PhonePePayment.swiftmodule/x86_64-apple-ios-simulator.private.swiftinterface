@@ -1,13 +1,19 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
-// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PhonePePayment
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PhonePePayment
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CommonCrypto
 import CoreData
+import DeveloperToolsSupport
 import Foundation
 @_exported import PhonePePayment
 import Swift
+import SwiftUI
 import UIKit
 import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
 public struct B2BPGTransactionRequest {
   public mutating func setHeaders(headers: [Swift.String : Swift.String])
   public init(merchantId: Swift.String, orderId: Swift.String, token: Swift.String, appSchema: Swift.String, paymentMode: PhonePePayment.PaymentMode)
@@ -33,28 +39,26 @@ public enum PaymentMode {
     get
   }
 }
-extension Environment : Swift.CaseIterable {
+extension PhonePePayment.Environment : Swift.CaseIterable {
   public typealias AllCases = [PhonePePayment.Environment]
-  public static var allCases: [PhonePePayment.Environment] {
+  nonisolated public static var allCases: [PhonePePayment.Environment] {
     get
   }
 }
 public typealias PPTransactionRequest = PhonePePayment.DPSTransactionRequest
 @objc public class PPAvailabilityCheckRequest : ObjectiveC.NSObject {
   public init(data: Swift.String, checksum: Swift.String, headers: [Swift.String : Swift.String]? = nil)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class DPSTransactionRequest : ObjectiveC.NSObject {
   @available(*, deprecated, renamed: "init(body:apiEndPoint:checksum:headers:appSchema:)")
   public init(body: Swift.String, apiEndPoint: Swift.String, checksum: Swift.String, headers: [Swift.String : Swift.String]?, callBackURL: Swift.String)
   public init(body: Swift.String, apiEndPoint: Swift.String, checksum: Swift.String, headers: [Swift.String : Swift.String]?, appSchema: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 public protocol Equal {
   var identifier: Swift.String { get }
-  func isEqualTo(_ to: PhonePePayment.Equal) -> Swift.Bool
+  func isEqualTo(_ to: any PhonePePayment.Equal) -> Swift.Bool
 }
 public protocol PhonePeErrorProtocol : PhonePePayment.Equal, Swift.Error {
   var code: Swift.String { get }
@@ -62,10 +66,10 @@ public protocol PhonePeErrorProtocol : PhonePePayment.Equal, Swift.Error {
 }
 public enum PPResultState {
   case success
-  case failure(_: PhonePePayment.PhonePeErrorProtocol)
-  case interrupted(_: PhonePePayment.PhonePeErrorProtocol)
+  case failure(_: any PhonePePayment.PhonePeErrorProtocol)
+  case interrupted(_: any PhonePePayment.PhonePeErrorProtocol)
 }
-extension PPResultState : Swift.Equatable {
+extension PhonePePayment.PPResultState : Swift.Equatable {
   public static func == (lhs: PhonePePayment.PPResultState, rhs: PhonePePayment.PPResultState) -> Swift.Bool
 }
 public enum PPTransactionStatus : Swift.String {
@@ -104,18 +108,18 @@ public struct VPACollectDetails : PhonePePayment.PGBaseCollect {
     get
   }
   public init(vpa: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct PhoneNumberDetails : PhonePePayment.PGBaseCollect {
   public var type: Swift.String? {
     get
   }
   public init(phoneNumber: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct UpiCollectPaymentMode {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(message: Swift.String, details: PhonePePayment.PGBaseCollect)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(message: Swift.String, details: any PhonePePayment.PGBaseCollect)
 }
 public enum ConstraintType {
   case wallet
@@ -126,35 +130,35 @@ public enum ConstraintType {
 public struct PPEIntentPaymentMode {
   public init(type withConstraint: Swift.String?, id: Swift.String? = nil)
   public init()
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct BoltConstraint {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct UPIIntentPaymentMode {
   public init(targetApp: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct NetbankingPaymentMode {
   public init(bankId: Swift.String? = nil)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct PayPagePaymentMode {
   public init()
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
-extension PPPayment {
+extension PhonePePayment.PPPayment {
   final public func startPG(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
 }
-extension PPPayment {
+extension PhonePePayment.PPPayment {
   final public func checkAvailability(request: PhonePePayment.PPAvailabilityCheckRequest, completion: @escaping PhonePePayment.PPAvailabilityCompletion)
 }
-extension PPPayment {
-  final public func validateCardDetails(mode: PhonePePayment.NewCardPaymentMode, completion: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
+extension PhonePePayment.PPPayment {
+  final public func validateCardDetails(mode: PhonePePayment.NewCardPaymentMode, completion: @escaping (_ isValid: Swift.Bool, _ errorMessage: Swift.String?) -> Swift.Void)
 }
 public typealias PaymentOptionConsentCompletion = (PhonePePayment.OptionState) -> Swift.Void
 public typealias PPTransactionCompletion = (PhonePePayment.DPSTransactionRequest?, PhonePePayment.PPResultState) -> Swift.Void
-public typealias PPAvailabilityCompletion = (Swift.Bool, Swift.String) -> Swift.Void
+public typealias PPAvailabilityCompletion = (_ isAvailable: Swift.Bool, _ responseCode: Swift.String) -> Swift.Void
 @_inheritsConvenienceInitializers @objc final public class PPPayment : ObjectiveC.NSObject {
   public static var enableDebugLogs: Swift.Bool {
     get
@@ -176,13 +180,13 @@ public typealias PPAvailabilityCompletion = (Swift.Bool, Swift.String) -> Swift.
   @objc convenience override dynamic public init()
   @objc deinit
 }
-extension PPPayment {
+extension PhonePePayment.PPPayment {
   final public func handlePGResult(map: [Swift.String : Any], on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
 }
-extension PPPayment {
+extension PhonePePayment.PPPayment {
   final public func startPhonePeTransactionRequest(transactionRequest request: PhonePePayment.PPTransactionRequest, on viewController: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping PhonePePayment.PPTransactionCompletion)
 }
-extension PPPayment {
+extension PhonePePayment.PPPayment {
   public static func getUPIAppsInstalled() -> [Swift.String]
   public static func isPhonePeInstalled() -> Swift.Bool
   public static func isPaytmAppPresent() -> Swift.Bool
@@ -220,8 +224,8 @@ public struct Instrument : Swift.Codable {
   public let tokenBin: Swift.String?
   public let panRefNo: Swift.String?
   public let metaInfo: [[Swift.String : PhonePePayment.AnyValue]]?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum AnyValue : Swift.Codable {
   case string(Swift.String)
@@ -230,15 +234,15 @@ public enum AnyValue : Swift.Codable {
   case bool(Swift.Bool)
   case null
   public func getValue() -> Any?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct ConsentRevokeRequest : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct SavedInstrumentResult {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum SavedInstrumentFailure : Swift.Error, Swift.Equatable {
   case noValidApp
@@ -253,11 +257,11 @@ public protocol PhonePeUserAccountProvider : AnyObject {
   func onConsentGiven()
   func onConsentNotGiven()
 }
-extension PhonePeUserAccountProvider {
+extension PhonePePayment.PhonePeUserAccountProvider {
   public func onConsentGiven()
 }
 @_hasMissingDesignatedInitializers public class PhonePeUserAccount {
-  public init(appSchema: Swift.String, delegate: PhonePePayment.PhonePeUserAccountProvider)
+  public init(appSchema: Swift.String, delegate: any PhonePePayment.PhonePeUserAccountProvider)
   public func setHeaders(_ headers: [Swift.String : Swift.String])
   public func getUserInstruments(token: Swift.String)
   public func link()
@@ -265,27 +269,51 @@ extension PhonePeUserAccountProvider {
 }
 public struct NewCardPaymentMode : Swift.Encodable {
   public init(cardNumber: Swift.String, cardHolderName: Swift.String, cvv: Swift.String, expiryMonth: Swift.String, expiryYear: Swift.String, merchantUserId: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
-extension PPPayment {
+extension PhonePePayment.PPPayment {
   final public func startTransaction(request: PhonePePayment.B2BPGTransactionRequest, on viewController: UIKit.UIViewController, completion: @escaping PhonePePayment.PPTransactionCompletion)
   final public func startCheckoutFlow(merchantId: Swift.String, orderId: Swift.String, token: Swift.String, appSchema: Swift.String, on viewController: UIKit.UIViewController, completion: @escaping PhonePePayment.PPTransactionCompletion)
 }
-extension Optional where Wrapped : Swift.ExpressibleByStringLiteral {
+#if compiler(>=5.3) && $NoncopyableGenerics
+extension Swift.Optional where Wrapped : Swift.ExpressibleByStringLiteral {
   public var emptyIfNil: Wrapped {
     get
   }
 }
-extension Optional where Wrapped : Swift.ExpressibleByBooleanLiteral {
+#else
+extension Swift.Optional where Wrapped : Swift.ExpressibleByStringLiteral {
+  public var emptyIfNil: Wrapped {
+    get
+  }
+}
+#endif
+#if compiler(>=5.3) && $NoncopyableGenerics
+extension Swift.Optional where Wrapped : Swift.ExpressibleByBooleanLiteral {
   public var falseIfNil: Wrapped {
     get
   }
 }
-extension Optional where Wrapped : Swift.ExpressibleByDictionaryLiteral {
+#else
+extension Swift.Optional where Wrapped : Swift.ExpressibleByBooleanLiteral {
+  public var falseIfNil: Wrapped {
+    get
+  }
+}
+#endif
+#if compiler(>=5.3) && $NoncopyableGenerics
+extension Swift.Optional where Wrapped : Swift.ExpressibleByDictionaryLiteral {
   public var emptyIfNil: Wrapped {
     get
   }
 }
+#else
+extension Swift.Optional where Wrapped : Swift.ExpressibleByDictionaryLiteral {
+  public var emptyIfNil: Wrapped {
+    get
+  }
+}
+#endif
 extension PhonePePayment.Environment : Swift.Equatable {}
 extension PhonePePayment.Environment : Swift.Hashable {}
 extension PhonePePayment.Environment : Swift.RawRepresentable {}
