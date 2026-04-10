@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PhonePePayment'
-  s.version          = '5.3.2'
+  s.version          = '5.3.4'
   s.summary          = 'PhonePePayment'
 
   s.description      = <<-DESC

@@ -1,3 +1,7 @@
+## [5.3.4]
+- Added PhoneNumber Support in Bolt Flow
+
+
 ## [5.3.2]
 Adding sessionId support for consent flow
 
