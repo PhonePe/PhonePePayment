@@ -48,11 +48,26 @@ In your Info.plist, create or append a new Array type node LSApplicationQueriesS
         <string>ppemerchantsdkv3</string>
         <string>ppemerchantsdkv4</string>
         <string>ppemerchantsdkv5</string>
+        <string>supermoney</string>
         <string>credpay</string>
         <string>amazonpay</string>
         <string>bhim</string>
         <string>gpay</string>
         <string>paytmmp</string>
+        <string>navi</string>
+        <string>mobikwik</string>
+        <string>slice-upi</string>
+        <string>postpe</string>
+        <string>popclubapp</string>
+        <string>jiofinance</string>
+        <string>jupiter</string>
+        <string>indmoney</string>
+        <string>kiwi</string>
+        <string>flipkart</string>
+        <string>myjio</string>
+        <string>sbiyono</string>
+        <string>whatsapp-consumer</string>
+        <string>payzapp</string>
 </array>
 ```
 ![LSApplicationQueriesSchemes](https://files.readme.io/256dde4-LSApplicationQueriesSchemes.png)

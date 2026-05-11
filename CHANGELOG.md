@@ -1,5 +1,5 @@
-## [5.3.4]
-- Added PhoneNumber Support in Bolt Flow
+## [5.4.0]
+- Now, 21 UPI apps supported for UPI payments
 
 
 ## [5.3.2]

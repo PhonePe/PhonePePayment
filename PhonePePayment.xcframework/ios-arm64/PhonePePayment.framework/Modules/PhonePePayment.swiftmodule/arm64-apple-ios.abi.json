@@ -10543,16 +10543,16 @@
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 867,
-      "length": 12,
-      "value": "\"paytmmp:\/\/\""
+      "offset": 866,
+      "length": 15,
+      "value": "\"supermoney:\/\/\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 908,
-      "length": 15,
-      "value": "\"supermoney:\/\/\""
+      "offset": 911,
+      "length": 12,
+      "value": "\"paytmmp:\/\/\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
@@ -10585,735 +10585,833 @@
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1132,
+      "offset": 1117,
+      "length": 9,
+      "value": "\"navi:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1159,
+      "length": 13,
+      "value": "\"mobikwik:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1205,
+      "length": 14,
+      "value": "\"slice-upi:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1250,
+      "length": 11,
+      "value": "\"postpe:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1293,
+      "length": 15,
+      "value": "\"popclubapp:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1343,
+      "length": 15,
+      "value": "\"jiofinance:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1390,
+      "length": 12,
+      "value": "\"jupiter:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1435,
+      "length": 13,
+      "value": "\"indmoney:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1477,
+      "length": 9,
+      "value": "\"kiwi:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1519,
+      "length": 13,
+      "value": "\"flipkart:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1562,
+      "length": 10,
+      "value": "\"myjio:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1604,
+      "length": 12,
+      "value": "\"sbiyono:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1649,
+      "length": 22,
+      "value": "\"whatsapp-consumer:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1703,
+      "length": 12,
+      "value": "\"payzapp:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1759,
       "length": 6,
       "value": "\"mcbs\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1213,
+      "offset": 1840,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1249,
+      "offset": 1876,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1294,
+      "offset": 1921,
       "length": 17,
       "value": "\"NETWORK_FAILURE\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1348,
+      "offset": 1975,
       "length": 17,
       "value": "\"NETWORK_SUCCESS\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1397,
+      "offset": 2024,
       "length": 11,
       "value": "\"mappingId\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1442,
+      "offset": 2069,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1491,
+      "offset": 2118,
       "length": 18,
       "value": "\"x-sdk-session-id\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1545,
+      "offset": 2172,
       "length": 19,
       "value": "\"X-MERCHANT-APP-ID\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1596,
+      "offset": 2223,
       "length": 14,
       "value": "\"X-CHANNEL-ID\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1643,
+      "offset": 2270,
       "length": 15,
       "value": "\"X-ROUTING-KEY\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1689,
+      "offset": 2316,
       "length": 13,
       "value": "\"X-DEVICE-ID\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1732,
+      "offset": 2359,
       "length": 10,
       "value": "\"X-VERIFY\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1776,
+      "offset": 2403,
       "length": 16,
       "value": "\"X-SDK-CHECKSUM\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1820,
+      "offset": 2447,
       "length": 10,
       "value": "\"X-APP-ID\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1866,
+      "offset": 2493,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1922,
+      "offset": 2549,
       "length": 23,
       "value": "\"X-DEVICE-MANUFACTURER\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1981,
+      "offset": 2608,
       "length": 18,
       "value": "\"X-SOURCE-VERSION\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2033,
+      "offset": 2660,
       "length": 16,
       "value": "\"X-DEVICE-MODEL\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2082,
+      "offset": 2709,
       "length": 15,
       "value": "\"X-APP-VERSION\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2129,
+      "offset": 2756,
       "length": 14,
       "value": "\"X-OS-VERSION\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2172,
+      "offset": 2799,
       "length": 10,
       "value": "\"X-SOURCE\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2219,
+      "offset": 2846,
       "length": 19,
       "value": "\"X-SOURCE-PLATFORM\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2282,
+      "offset": 2909,
       "length": 27,
       "value": "\"X-SOURCE-PLATFORM-VERSION\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2373,
+      "offset": 3000,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2424,
+      "offset": 3051,
       "length": 17,
       "value": "\"phonepe_ios_sdk\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2473,
+      "offset": 3100,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2509,
+      "offset": 3136,
       "length": 5,
       "value": "\"IOS\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2549,
+      "offset": 3176,
       "length": 20,
       "value": "\"\/apis\/sdk\/v3\/event\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2612,
+      "offset": 3239,
       "length": 23,
       "value": "\"\/v3\/availabilitycheck\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2683,
+      "offset": 3310,
       "length": 33,
       "value": "\"\/pg-ingestion\/apis\/sdk\/v3\/event\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2761,
+      "offset": 3388,
       "length": 38,
       "value": "\"\/pg-ingestion\/client\/v1\/events\/batch\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2857,
+      "offset": 3484,
       "length": 4,
       "value": "3000"
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2864,
+      "offset": 3491,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2942,
+      "offset": 3569,
       "length": 8,
       "value": "\"flowId\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2980,
+      "offset": 3607,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3019,
+      "offset": 3646,
       "length": 9,
       "value": "\"isValid\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3065,
+      "offset": 3692,
       "length": 17,
       "value": "\"instrument_type\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3129,
+      "offset": 3756,
       "length": 26,
       "value": "\"shouldMonitorForCallback\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3198,
+      "offset": 3825,
       "length": 22,
       "value": "\"merchantCallbackName\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3252,
+      "offset": 3879,
       "length": 11,
       "value": "\"intentUri\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3292,
+      "offset": 3919,
       "length": 9,
       "value": "\"web_url\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3334,
+      "offset": 3961,
       "length": 13,
       "value": "\"method_type\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3383,
+      "offset": 4010,
       "length": 15,
       "value": "\"merchantAppId\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3438,
+      "offset": 4065,
       "length": 11,
       "value": "\"flow_type\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3484,
+      "offset": 4111,
       "length": 18,
       "value": "\"redirection_type\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3535,
+      "offset": 4162,
       "length": 12,
       "value": "\"sdkApiName\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3581,
+      "offset": 4208,
       "length": 13,
       "value": "\"paymentMode\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3635,
+      "offset": 4262,
       "length": 20,
       "value": "\"paymentModeDetails\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3688,
+      "offset": 4315,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3736,
+      "offset": 4363,
       "length": 15,
       "value": "\"transactionId\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3788,
+      "offset": 4415,
       "length": 16,
       "value": "\"merchantUserId\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3833,
+      "offset": 4460,
       "length": 9,
       "value": "\"APP_SDK\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3873,
+      "offset": 4500,
       "length": 12,
       "value": "\"isValidApp\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3927,
+      "offset": 4554,
       "length": 21,
       "value": "\"appSupportedSchemas\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4001,
+      "offset": 4628,
       "length": 32,
       "value": "\"checkAvailabilityFinalResponse\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4082,
+      "offset": 4709,
       "length": 36,
       "value": "\"checkAvailabilityFinalResponseCode\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4165,
+      "offset": 4792,
       "length": 26,
       "value": "\"checkAvailabilityTimeOut\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4251,
+      "offset": 4878,
       "length": 10,
       "value": "\"SDK_INIT\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4309,
+      "offset": 4936,
       "length": 31,
       "value": "\"SDK_PHONEPE_USER_ACCOUNT_INIT\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4372,
+      "offset": 4999,
       "length": 19,
       "value": "\"SDK_PG_V1_STARTED\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4423,
+      "offset": 5050,
       "length": 19,
       "value": "\"SDK_PG_V2_STARTED\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4482,
+      "offset": 5109,
       "length": 20,
       "value": "\"CHECK_AVAILABILITY\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4544,
+      "offset": 5171,
       "length": 23,
       "value": "\"VALIDATE_CARD_DETAILS\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4604,
+      "offset": 5231,
       "length": 24,
       "value": "\"SDK_PAYMENT_V2_STARTED\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4670,
+      "offset": 5297,
       "length": 27,
       "value": "\"SDK_GET_SAVED_INSTRUMENTS\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4747,
+      "offset": 5374,
       "length": 38,
       "value": "\"SDK_SAVED_INSTRUMENTS_REVOKE_STARTED\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4822,
+      "offset": 5449,
       "length": 23,
       "value": "\"SDK_CONTAINER_STARTED\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4881,
+      "offset": 5508,
       "length": 22,
       "value": "\"SDK_CHECKOUT_STARTED\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4970,
+      "offset": 5597,
       "length": 14,
       "value": "\"PhonePeAppId\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5011,
+      "offset": 5638,
       "length": 6,
       "value": "\"SIMP\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5068,
+      "offset": 5695,
       "length": 53,
       "value": "\"Error: Open App success but app schema is not valid\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5162,
+      "offset": 5789,
       "length": 47,
       "value": "\"App Reopened manually without consent details\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5264,
+      "offset": 5891,
       "length": 93,
       "value": "\"Error: PhonePeUserAccountProvider delegate is nil, Please conforms this to get the callback\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5431,
+      "offset": 6058,
       "length": 36,
       "value": "\"\/payments\/v2\/sdk\/saved-instruments\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5519,
+      "offset": 6146,
       "length": 43,
       "value": "\"\/payments\/v2\/sdk\/saved-instruments\/unlink\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5601,
+      "offset": 6228,
       "length": 22,
       "value": "\"\/checkout\/v2\/sdk\/pay\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5660,
+      "offset": 6287,
       "length": 22,
       "value": "\"\/payments\/v2\/sdk\/pay\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5723,
+      "offset": 6350,
       "length": 33,
       "value": "\"\/payments\/v2\/sdk\/encryption-key\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5790,
+      "offset": 6417,
       "length": 9,
       "value": "\"\/b2b-pg\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5830,
+      "offset": 6457,
       "length": 5,
       "value": "\"\/pg\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5871,
+      "offset": 6498,
       "length": 13,
       "value": "\"\/pg-sandbox\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5914,
+      "offset": 6541,
       "length": 10,
       "value": "\"O-Bearer\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5953,
+      "offset": 6580,
       "length": 8,
       "value": "\"Bearer\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5993,
+      "offset": 6620,
       "length": 12,
       "value": "\"UPI_DIRECT\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6037,
+      "offset": 6664,
       "length": 12,
       "value": "\"PPE_DIRECT\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6081,
+      "offset": 6708,
       "length": 12,
       "value": "\"UPI_INTENT\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6125,
+      "offset": 6752,
       "length": 12,
       "value": "\"PPE_INTENT\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6167,
+      "offset": 6794,
       "length": 9,
       "value": "\"ACCOUNT\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6205,
+      "offset": 6832,
       "length": 8,
       "value": "\"WALLET\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6247,
+      "offset": 6874,
       "length": 15,
       "value": "\"ONE_CLICK_PAY\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6288,
+      "offset": 6915,
       "length": 5,
       "value": "\"VPA\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6321,
+      "offset": 6948,
       "length": 7,
       "value": "\"PHONE\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6358,
+      "offset": 6985,
       "length": 13,
       "value": "\"UPI_COLLECT\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6404,
+      "offset": 7031,
       "length": 13,
       "value": "\"NET_BANKING\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6447,
+      "offset": 7074,
       "length": 10,
       "value": "\"NEW_CARD\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6487,
+      "offset": 7114,
       "length": 10,
       "value": "\"PAY_PAGE\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6525,
+      "offset": 7152,
       "length": 7,
       "value": "\"TOKEN\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6559,
+      "offset": 7186,
       "length": 6,
       "value": "\"CARD\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6596,
+      "offset": 7223,
       "length": 5,
       "value": "\"3DS\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6629,
+      "offset": 7256,
       "length": 7,
       "value": "\"state\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6668,
+      "offset": 7295,
       "length": 11,
       "value": "\"intentUrl\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6750,
+      "offset": 7377,
       "length": 26,
       "value": "\"\/web-sdk\/v1\/cards\/config\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6848,
+      "offset": 7475,
       "length": 14,
       "value": "\"SDKSessionId\""
     },
     {
       "filePath": "\/Users\/devicelab\/builds\/FM-fDSZ3\/0\/iOS\/phonepe-ios-sdk\/DirectPaymentSDK\/DirectPaymentSDK\/Constants\/DPSConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6915,
+      "offset": 7542,
       "length": 11,
       "value": "\"ic_cancel\""
     },
