@@ -26,11 +26,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WvjvY3EF9fEnq1xPi7UZyRwePo8=
+		tYzuFecbaiDVabT3WM1BIH5kZGs=
 		</data>
 		<key>Modules/PhonePePayment.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		hdDAH//N8y6sKTl/TgI1q/0nhYI=
+		NCOn6B61txqiBrkha7LFPt7++WM=
 		</data>
 		<key>Modules/PhonePePayment.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/PhonePePayment.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		96FyeCx5vF9J1V/DkoRUer6c/nM=
+		trjnURWbHoLGe78Dik1BV/cEr+4=
 		</data>
 		<key>Modules/PhonePePayment.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		hdDAH//N8y6sKTl/TgI1q/0nhYI=
+		NCOn6B61txqiBrkha7LFPt7++WM=
 		</data>
 		<key>Modules/PhonePePayment.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/PhonePePayment.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cmVl5j8S5QieC75diMryfgcI/P8=
+		W4WhG014bQaWzSQD6Wtfti0pzjA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -134,11 +134,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hdDAH//N8y6sKTl/TgI1q/0nhYI=
+			NCOn6B61txqiBrkha7LFPt7++WM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZhmgIIqryf/xnFME22lRsgCAj+6dYnYvODKF22mbSdw=
+			fmi4C9iLPzvL0MNvwxFHCREqjLx6+iqaDLflOiXwIFM=
 			</data>
 		</dict>
 		<key>Modules/PhonePePayment.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -178,22 +178,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			96FyeCx5vF9J1V/DkoRUer6c/nM=
+			trjnURWbHoLGe78Dik1BV/cEr+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			2QNIETeeQlBVcmlTf2wv1S70ShCMMFz3J2+zUcvJfZU=
+			hlnfMYW7xTET7tvZtjVEZB+uoRb8uvBeNI9crtH5SeY=
 			</data>
 		</dict>
 		<key>Modules/PhonePePayment.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hdDAH//N8y6sKTl/TgI1q/0nhYI=
+			NCOn6B61txqiBrkha7LFPt7++WM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZhmgIIqryf/xnFME22lRsgCAj+6dYnYvODKF22mbSdw=
+			fmi4C9iLPzvL0MNvwxFHCREqjLx6+iqaDLflOiXwIFM=
 			</data>
 		</dict>
 		<key>Modules/PhonePePayment.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -233,11 +233,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cmVl5j8S5QieC75diMryfgcI/P8=
+			W4WhG014bQaWzSQD6Wtfti0pzjA=
 			</data>
 			<key>hash2</key>
 			<data>
-			EQRMt/j8hxqXA+5v9Yf+gIwo/l62veYauvJMRPzQRXQ=
+			epp04A7qCjoyU2NQI6n/KMgi/De/rfgMJgchAp4OjU4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

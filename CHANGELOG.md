@@ -1,3 +1,7 @@
+## [5.4.1]
+- Improved Security of Card Payment Flow
+
+
 ## [5.4.0]
 - Now, 21 UPI apps supported for UPI payments
 
