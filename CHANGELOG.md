@@ -1,5 +1,5 @@
-## [5.4.1]
-- Improved Security of Card Payment Flow
+## [5.4.2]
+- Improved Security
 
 
 ## [5.4.0]
